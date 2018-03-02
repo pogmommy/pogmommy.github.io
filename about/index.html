@@ -1,61 +1,38 @@
 <!DOCTYPE html>
-
 <html>
-	<head>
-		<title>Micah Gomez - About</title>
-
-		<link rel="shortcut icon" href="../images/logo.ico">
-<!--
-		<nav class="fixed-nav-bar">
-
-			<center>
-				<p style="font-size:130%;position:absolute;top:-15px;width: 100%;text-align: center" >
-					<font color="black"> <a href=".."><img src="../images/M_LOGO.png" alt="M_LOGO" style="width:27px;height:27px;position:absolute;top:-5px;left:2px"></a> <a href="/about/">About</a>&nbsp|&nbsp <a href="/projects/">Projects</a>&nbsp|&nbsp <a href="/media/">Social Media</a>&nbsp|&nbsp <a href="/progress/">Progress</a> </font>
-				</p>
-			</center>
-		</nav>
--->
-		<link rel="stylesheet" type="text/css" href="../css/style.css">
-
-	</head>
+<head>
+<meta charset="utf-8">
+<title>Micah Gomez</title>
+<link rel="shortcut icon" href="../images/logo.ico">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
 <body>
-			<ul class="banner">
-  <li><a id="banneritem"  href="https://mpg13.github.io">Home</a></li>
-  <li><a id="banneritem" style="background-color:green;" class="active" href="/about/">About</a></li>
-  <li><a id="banneritem" href="/projects/">Projects</a></li>
-  <li><a id="banneritem" href="/media/">Social Media</a></li>
-  <li><a id="banneritem" href="/progress/">Progress</a></li>
+<ul class="navbar">
+	<li class="navbar"><a class="statushome" href="#">Home</a></li>
+	<li class="navbar"><a href="../about/">About Me</a></li>
+	<li class="navbar"><a href="../projects/">Projects</a></li>
+	<li class="navbar" style="padding-top: 10px;position: absolute; right: 10px;">
+		<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+			<input type="hidden" name="cmd" value="_s-xclick">
+			<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+			<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+			<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+		</form>
+	</li>
 </ul>
-	<body>
-		<center>
-
-			&nbsp
-			<h1>About Me</h1>
-			<h2>I go to Mountain View High School, located in Meridian, Idaho.</h2>
-			     <img style="float:left" src="/images/meridian_id.png" height="200" width="180"/>
-
-   			     <img style="float:right" src="/images/mvhs.gif"/ height="200" width="400"/>
-
-			<h2>TV Shows</h2>
-			<p>
-				My absolute, all-time, top, favorite television show HAS to be the NBC show, "The Office". Either that, or... well... You'll see if it ever becomes a reality. You might find hints around my site.
-			</p>
-			<h2>Movies</h2>
-			<p>
-				My favorite movies are <a href="http://www.imdb.com/title/tt0133093/">The Matrix</a>, <a href="http://www.imdb.com/title/tt1316037/">Birdemic</a>, <a href="http://www.imdb.com/title/tt1300854/">Iron Man 3</a>, <a href="http://www.imdb.com/title/tt1488591/">Professor Layton</a>, and <a href="http://www.imdb.com/title/tt0108255/">The Super Mario Bros. Movie</a>, some of which recieved very bad ratings, which is part of why I like them. They came across more as unintended comedy than whatever they were intended for.
-			</p>
-			<p>
-				However, they all are stumped by <a href="http://www.imdb.com/title/tt2080374/">Steve Jobs</a> and <a href="http://www.imdb.com/title/tt2357129/">Jobs</a>.
-			</p>
-			<h2>Music</h2>
-			<p>
-				The <a href="https://www.youtube.com/playlist?list=PLRZ53Cu83VhlAJ_yR2HMDGL9XoKexrl6U">Steve Jobs soundtrack by Daniel Pemberton</a>, <a href="https://www.youtube.com/channel/UCnX0L9QiftAcWdzeBx31xCw">Twenty One Pilots</a>, <a href="https://www.youtube.com/playlist?list=PLPlYmEvSz7rTZRC_fz6Mw1IP2WifrnNHn">The Suicide Squad Soundtrack</a>, <a href="https://www.youtube.com/watch?v=yIl1OIGzuDg&list=PL8KQXy_mAmdfKIuWqiFHe-kFo_OKlNaaB">Hamilton</a>, <a href="https://www.youtube.com/watch?v=vmp-xmguqh4&list=PLdUWNyk3iEfpRBJ9h13xP-FqcMxzXhNsU">The Book of Mormon</a>, and <a href="https://www.youtube.com/watch?v=6Ym8ECF5vkE&list=PL0077B6FD745A038F">Avenue Q</a>. Just go listen to them. All are very good, not all of them are PG.<h2>Food</h2>
-			<p>
-				My favorite food is Orange Chicken from Panda Express. That stuff is like... like american-chinese deliciousness. Also Enchiladas. Nothings beats those.
-			</p>
-			<p>
-				Except maybe... Enchiladas stuffed with Orange Chicken...
-			</p>
-		</center>
-	</body>
+<br style="line-height: 350%">
+<h1>My name is Micah Gomez (MPG13)</h1>
+<img alt="tips" style="width:25%; display: block; margin-left: auto; margin-right: auto;" src="images/logo.png"> <br style="line-height: 200%">
+<p>I am a Junior in highschool in Idaho, United States. I'm in the broadcasting club in my school, and have taken both the Computer Science and Web Design classes as far as they are offered. I love programming and computer science, and find myself to be proficient at Web Deisgn. I am working to become fluent in Swift as well.<br style="line-height: 200%;">
+	I have made a handful of projects, most being websites which are never used. I have made a simple iOS app, and host my own Cydia repo. I have made themes for iOS, but I'm no artist.<br style="line-height: 200%;">
+	I love Jailbreaking, and always have since I started on late 2013 on my iPod running iOS 6.1.3. I have jailbroken iOS 4-11 at this point, and have accumulated an arsenal of Apple Devices, including an iPhone 3GS, an iPad, an iPhone 4, two iPod touch 4s, an iPhone 5c, an iPad mini, an iPhone 6, and the device I am proudest of: an iMac G3.<br style="line-height: 200%;">
+	My daily devices range across most major operating systems. My Desktop and Laptop are both dualbooting Windows 10 and Ubuntu 16.04. I have an iMac Running High Sierra, and as aforementioned, an iMac G3, running Mac OS X 10.3 Panther.</p>
+<br style="line-height: 300%">
+<center>
+	<a href="https://www.reddit.com/u/-mpg13-"><img class="smbutton" src="../images/reddit.svg"></a> <a href="https://www.instagram.com/micah_p_gomez"><img class="smbutton" src="../images/insta.svg"></a> <a href="https://www.twitter.com/not_MPG13"><img class="smbutton" src="../images/twitter.svg"></a> <a href="https://www.youtube.com/user/micahcraft13/featured?"><img class="smbutton" src="../images/youtube.svg"></a> <a href="https://www.github.com/MPG13"><img class="smbutton" src="../images/github.svg"></a>
+</center>
+<br style="line-height: 300%">
+<br>
+</body>
 </html>

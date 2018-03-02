@@ -1,78 +1,104 @@
-@font-face {
-	font-family: vt323;
+/*Color scheme:
+#455144 grey/green
+#3F4C1B Dark Green
+#689323 Standard Green
+#8BB174 Pale Green
+#B5CA8D Desaturated Yellow-Green
+*/
+
+/*navigation bar CSS Starts*/
+ul.navbar {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #8BB174;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+li.navbar {
+	float: left;
+}
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+li.navbar a:hover:not(.statushome) {
+	background-color: #B5CA8D;
+}
+.statushome {
+	background-color: #3F4C1B;
+}
+/*Navigation Bar CSS Ends*/
+
+/*Standard Body CSS Starts*/
+@font-face{
+	font-family: SanFran;
 	src: url(../fonts/iOSSF.ttf);
 }
-
 body {
-	background-color: #faf0e6;
-	font-family: "vt323", sans-serif;
+	margin: 0;
+	font-family: SanFran;
+	background-color: linen;
 }
 h1 {
-	color: Black;
-	font-family: Tahoma;
-	font-family: "vt323", sans-serif;
-	font-size: 200%;
+	color: #3F4C1B;
+	font-size: 300%;
+	text-align: center;
+	font-family: SanFran;
+}
+h2{
+	color: #689323;
+	font-size: 250%;
+	text-align: center;
+	font-family: SanFran;
+}
+h3{
+	color: #689323;
+	font-size: 130%;
+	text-align: center;
+	font-family: SanFran;
 }
 p {
-	color: #064E25;
-	font-family: Tahoma;
-	font-family: "vt323", sans-serif;
-	font-size: 125%;
-	padding-left: 20%;
-	padding-right: 20%;
+	color: #3F4C1B;
+	font-family: SanFran;
+	font-size: 110%;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+a{
+	text-decoration: none;
+}
+li{
+	font-family: SanFran;
 }
 
-h2 {
-	color: #053F1E;
-	font-family: "vt323", sans-serif;
-	font-size: 165%;
-}
-a {
-	cursor: url('../images/cursor.ico'), default;
-	font-family: "vt323", sans-serif;
-}
+/*Standard Body CSS Ends*/
 
-body {
-	cursor: url('../images/cursor.ico'), default;
-	font-family: "vt323", sans-serif;
-}
-.banner {
-    list-style-type: none;
-    margin: 0;
-    padding: 20;
-    overflow: hidden;
-    background-color: #555;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 120%;
-}
+/*special Body Info Starts*/
 
-#banneritem {
-    float: left;
-    text-align: center;
+.introtext {
+	display: block;
+	margin-left: 15%;
+	margin-right: 15%;
 }
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+.centerimage{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
-
-li a:hover:not(.active) {
-    background-color: #444;
+.centertext{
+	text-align: center;
 }
-
-img {
-    z-index: -1;
+.smbutton{
+	background-color: rgba(139, 177, 116, 1);
+	padding: 10px;
+	border-radius: 12.632px;
 }
-
-.imgContainer{
-    float:left;
-}
-
-#active{
-background-color:green;
+.smbutton:hover{
+	background-color: rgba(139, 177, 116, 0.5);
 }
