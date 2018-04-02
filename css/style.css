@@ -44,6 +44,7 @@ body {
 	margin: 0;
 	font-family: SanFran;
 	background-color: linen;
+	cursor: url(../images/cursor.ico), auto;
 }
 h1 {
 	color: #3F4C1B;
