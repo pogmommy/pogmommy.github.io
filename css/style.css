@@ -74,7 +74,8 @@ p {
 }
 a{
 	text-decoration: none;
-	color: #3F4C1B;
+	color: #689323;
+	cursor: url(../images/cursor.ico), auto;
 }
 li{
 	font-family: SanFran;
