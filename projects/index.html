@@ -5,6 +5,7 @@
 <title>Micah Gomez</title>
 <link rel="shortcut icon" href="../images/logo.ico">
 <link rel="stylesheet" type="text/css" href="../css/style.css">
+<script src="../js/jquery.min.js"></script>
 </head>
 <body>
 	
@@ -36,17 +37,35 @@ Analytics"></a></div></noscript>
 <br>
 <p class="centertext">I've got a handful of open-source projects, links to the download/source code of my most notable ones are available here.</p>
 <div style="padding-left: auto;padding-right: auto;text-align: center;">
-	<a href="https://github.com/MPG13/QuantumEntanglement-SpeedSystems/blob/master/README.md" style="padding-right: 50px;"><div class="smbutton" style="width: 150px;display: inline-block;"><img class="centerimage" style="width: 100px;height: 100px;padding-top: 20px;" src="../images/qesys.png"><p class="centertext">QESystems</p></div></a>
+	<a href="https://github.com/MPG13/QuantumEntanglement-SpeedSystems/blob/master/README.md" style="padding-right: 50px;"><div class="smbutton" style="width: 150px;display: inline-block;"><img class="centerimage" style="width: 100px;height: 100px;padding-top: 20px;" src="../images/qesys.png"><p class="centertext">QESystems</p><button onClick="softwareDesc()">Test</button></div></a>
 	<a href="https://mpg13.github.io/repo/" style="padding-right: 50px;"><div class="smbutton" style="width: 150px;display: inline-block;"><img class="centerimage" style="width: 100px;height: 100px;padding-top: 20px;" src="../images/logo.png"><p class="centertext">My Repo</p></div></a>
 	<a href="https://tips-plus.github.io/"><div class="smbutton" style="width: 150px;display: inline-block;"><img class="centerimage" style="width: 100px;height: 100px;padding-top: 20px;" src="../images/Tipsplus.png"><p class="centertext">Tips+</p></div></a>
 </div>
+	
+	<div id="descriptionContent"></div>
+	
 	<p class="centertext"><a href="../other/Calendar.html">&bull; Westada Bell Schedule for your calendar &bull;</a></p>
 	<p class="centertext"><a href="../downloads/Grade Tracker.xltx">&bull; Excel Spreadsheet for Tracking Grade History &bull;</a></p>
 	<p class="centertext"><a href="https://www.youtube.com/user/micahcraft13/featured?">&bull; A collection of my video projects &bull;</a></p>
 <br>
+	
 <center>
 	<a href="https://www.reddit.com/u/-mpg13-"><img class="smbutton" src="../images/reddit.svg"></a> <a href="https://www.instagram.com/micah_p_gomez"><img class="smbutton" src="../images/insta.svg"></a> <a href="https://www.twitter.com/not_MPG13"><img class="smbutton" src="../images/twitter.svg"></a> <a href="https://www.youtube.com/user/micahcraft13/featured?"><img class="smbutton" src="../images/youtube.svg"></a> <a href="https://www.github.com/MPG13"><img class="smbutton" src="../images/github.svg"></a>
 </center>
 <br>
+	
+<script>
+
+function softwareDesc(){
+	document.getElementById("descriptionContent").innerHTML = "<p>The software I've written can be found on my github, linked above. Here are a few of my notable projects.</p> <img class='centerimage' style='width: 100px;height: 100px;padding-top: 20px;' src='../images/qesys.png'>"
+	
+}
+	
+function repoDesc(){
+	
+}
+
+</script>
+	
 </body>
 </html>
