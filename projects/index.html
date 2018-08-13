@@ -37,12 +37,16 @@ Analytics"></a></div></noscript>
 <br>
 <p class="centertext">I've got a handful of open-source projects, links to the download/source code of my most notable ones are available here.</p>
 <div style="padding-left: auto;padding-right: auto;text-align: center;">
-	<a href="https://github.com/MPG13/QuantumEntanglement-SpeedSystems/blob/master/README.md" style="padding-right: 50px;"><div class="smbutton" style="width: 150px;display: inline-block;"><img class="centerimage" style="width: 100px;height: 100px;padding-top: 20px;" src="../images/qesys.png"><p class="centertext">QESystems</p><button onClick="softwareDesc()">Test</button></div></a>
-	<a href="https://mpg13.github.io/repo/" style="padding-right: 50px;"><div class="smbutton" style="width: 150px;display: inline-block;"><img class="centerimage" style="width: 100px;height: 100px;padding-top: 20px;" src="../images/logo.png"><p class="centertext">My Repo</p></div></a>
-	<a href="https://tips-plus.github.io/"><div class="smbutton" style="width: 150px;display: inline-block;"><img class="centerimage" style="width: 100px;height: 100px;padding-top: 20px;" src="../images/Tipsplus.png"><p class="centertext">Tips+</p></div></a>
-</div>
+	<a href="https://github.com/MPG13/QuantumEntanglement-SpeedSystems/blob/master/README.md"><div class="contentbutton"><img class="centerimage" style="width: 100px;height: 100px;padding-top: 20px;" src="../images/qesys.png"><p class="centertext">QESystems</p></div></a>
+	<a href="https://mpg13.github.io/repo/"><div class="contentbutton"><img class="centerimage" style="width: 100px;height: 100px;padding-top: 20px;" src="../images/logo.png"><p class="centertext">My Repo</p></div></a>
+	<a href="https://tips-plus.github.io/"><div class="contentbutton"><img class="centerimage" style="width: 100px;height: 100px;padding-top: 20px;" src="../images/Tipsplus.png"><p class="centertext">Tips+</p></div></a>
+	<br>
+	<button class="contentbuttonmore" onClick="softwareDesc()">Read More</button>
+	<button class="contentbuttonmore" onClick="repoDesc()">Read More</button>
+	<button class="contentbuttonmore" onClick="webDesc()">Read More</button>
+</div><br>
 	
-	<div id="descriptionContent"></div>
+	<div id="descriptionContent" class="descriptionContent"></div>
 	
 	<p class="centertext"><a href="../other/Calendar.html">&bull; Westada Bell Schedule for your calendar &bull;</a></p>
 	<p class="centertext"><a href="../downloads/Grade Tracker.xltx">&bull; Excel Spreadsheet for Tracking Grade History &bull;</a></p>
@@ -56,13 +60,41 @@ Analytics"></a></div></noscript>
 	
 <script>
 
+openDesc = 0
+
 function softwareDesc(){
 	document.getElementById("descriptionContent").innerHTML = "<p>The software I've written can be found on my github, linked above. Here are a few of my notable projects.</p> <img class='centerimage' style='width: 100px;height: 100px;padding-top: 20px;' src='../images/qesys.png'>"
-	
+	if (openDesc == 1){
+		document.getElementById("descriptionContent").style.display = "none";
+		openDesc = 0;
+	}
+	else{
+		document.getElementById("descriptionContent").style.display = "block";
+		openDesc = 1;
+	}
 }
 	
 function repoDesc(){
+	document.getElementById("descriptionContent").innerHTML = "<p>My Cydia Repo contains some of my most famous work. Here's a quick list of what's on it.</p> <p>Twelven: A XenHTML Widget designed to imitate iOS 12's smart lock screen</p> <img class='centerimage' style='width: 100px;height: 100px;padding-top: 20px;' src='../images/qesys.png'>"
+	if (openDesc == 2){
+		document.getElementById("descriptionContent").style.display = "none";
+		openDesc = 0;
+	}
+	else{
+		document.getElementById("descriptionContent").style.display = "block";
+		openDesc = 2;
+	}
 	
+}function webDesc(){
+	document.getElementById("descriptionContent").innerHTML = "<p>I've written a few websites if you couldn't tell. Here's a quick link to my best ones.</p> <p><a href='https://mpg13.github.io'>My Personal Website</a>: A website about me, what I do, and why I do it</p> <p><a href='https://tips-plus.github.io'>Tips+</a>: A website for iOS jailbreak tech support. Run by me, and designed by the master of web design, Artillect</p><img class='centerimage' style='width: 100px;height: 100px;padding-top: 20px;' src='../images/qesys.png'>"
+	if (openDesc == 3){
+		document.getElementById("descriptionContent").style.display = "none";
+		openDesc = 0;
+	}
+	else{
+		document.getElementById("descriptionContent").style.display = "block";
+		openDesc = 3;
+	}
 }
 
 </script>
