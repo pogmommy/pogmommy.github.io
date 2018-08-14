@@ -26,7 +26,7 @@ var sc_security="fdd6bd3e";
 <div id="header-placeholder"></div>
 <div class="bodycontent">
 	<h1>My Projects</h1>
-	<p class="centertext">I've got a handful of open-source projects, links to the download/source code of my most notable ones are available here.</p>
+	<p class="centertext">I've got a handful of open-source projects<br>Links to my most notable ones are available here.</p>
 	<div style="padding-left: auto;padding-right: auto;text-align: center;"> <a href="https://github.com/MPG13/">
 		<div class="contentbutton">
 			<img class="contentbuttonimage" src="../images/content_button_icons/software.png">
@@ -48,10 +48,10 @@ var sc_security="fdd6bd3e";
 			<p class="centertext">Other</p>
 		</div>
 		</a> <br>
-		<div class="contentbuttonmore" onClick="softwareDesc()">Read More</div>
-		<div class="contentbuttonmore" onClick="repoDesc()">Read More</div>
-		<div class="contentbuttonmore" onClick="webDesc()">Expand</div>
-		<div class="contentbuttonmore" onClick="otherDesc()">Expand</div>
+		<div class="contentbuttonmore" id="softwareDesc" onClick="softwareDesc()">Read More</div>
+		<div class="contentbuttonmore" id="repoDesc" onClick="repoDesc()">Read More</div>
+		<div class="contentbuttonmore" id="webDesc" onClick="webDesc()">Expand</div>
+		<div class="contentbuttonmore" id="otherDesc" onClick="otherDesc()">Expand</div>
 	</div>
 	<br>
 	<div id="softwareDescContent" class="descriptionContent">
@@ -88,7 +88,7 @@ var sc_security="fdd6bd3e";
 <div id="footer-placeholder" class="footer-placeholder"></div>
 <script>
 
-openDesc = 0;
+/*openDesc = 0;
 	
 function softwareDesc(){
 	if (openDesc == 1){
@@ -146,7 +146,40 @@ function otherDesc(){
 		
 		openDesc = 4;
 	}
-}
+}*/
+	
+	
+$(document).ready(function(){
+	$("#softwareDescContent").hide();
+	$("#repoDescContent").hide();
+	$("#webDescContent").hide();
+	$("#otherDescContent").hide();
+	
+	$("#softwareDesc").click(function(){
+		$("#repoDescContent").fadeOut();
+		$("#webDescContent").fadeOut();
+		$("#otherDescContent").fadeOut();
+		$("#softwareDescContent").delay(400).fadeToggle();
+	});
+	$("#repoDesc").click(function(){
+		$("#softwareDescContent").fadeOut();
+		$("#webDescContent").fadeOut();
+		$("#otherDescContent").fadeOut();
+		$("#repoDescContent").delay(400).fadeToggle();
+	});
+	$("#webDesc").click(function(){
+		$("#softwareDescContent").fadeOut();
+		$("#repoDescContent").fadeOut();
+		$("#otherDescContent").fadeOut();
+		$("#webDescContent").delay(400).fadeToggle();
+	});
+	$("#otherDesc").click(function(){
+		$("#softwareDescContent").fadeOut();
+		$("#repoDescContent").fadeOut();
+		$("#webDescContent").fadeOut();
+		$("#otherDescContent").delay(400).fadeToggle();
+	});
+});
 
 </script>
 </body>
