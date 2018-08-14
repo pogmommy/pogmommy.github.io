@@ -6,6 +6,7 @@
 <link rel="shortcut icon" href="../images/logo.ico">
 <link rel="stylesheet" type="text/css" href="../css/style.css">
 <script src="../js/jquery.min.js"></script>
+<script src="../js/nav-footer.js"></script>
 </head>
 <body>
 
@@ -16,99 +17,75 @@ var sc_project=11679648;
 var sc_invisible=1; 
 var sc_security="fdd6bd3e"; 
 </script> 
-<script type="text/javascript"
-src="https://www.statcounter.com/counter/counter.js"
-async></script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
 <noscript>
-<div class="statcounter"><a title="Web Analytics"
-href="http://statcounter.com/" target="_blank"><img
-class="statcounter"
-src="//c.statcounter.com/11679648/0/fdd6bd3e/1/" alt="Web
-Analytics"></a></div>
+<div class="statcounter"><a title="Web Analytics" href="http://statcounter.com/" target="_blank"><img class="statcounter" src="//c.statcounter.com/11679648/0/fdd6bd3e/1/" alt="Web Analytics"></a></div>
 </noscript>
 <!-- End of Statcounter Code -->
 
-<ul class="navbar">
-	<li class="navbar"><a class="statushome" href="..">Home</a></li>
-	<li class="navbar"><a href="../about/">About Me</a></li>
-	<li class="navbar"><a href="../projects/">Projects</a></li>
-	<li class="navbar" style="float: right"><a href="https://www.paypal.me/MicahGomez">Donate</a></li>
-</ul>
-<br style="line-height: 250%">
-<h1>My Projects</h1>
-<br>
-<p class="centertext">I"ve got a handful of open-source projects, links to the download/source code of my most notable ones are available here.</p>
-<div style="padding-left: auto;padding-right: auto;text-align: center;">
-	
-	<a href="https://github.com/MPG13/">
-	<div class="contentbutton"><img class="contentbuttonimage" src="../images/content_button_icons/software.png">
-		<p class="centertext">Software</p>
+<div id="header-placeholder"></div>
+<div class="bodycontent">
+	<h1>My Projects</h1>
+	<p class="centertext">I've got a handful of open-source projects, links to the download/source code of my most notable ones are available here.</p>
+	<div style="padding-left: auto;padding-right: auto;text-align: center;"> <a href="https://github.com/MPG13/">
+		<div class="contentbutton">
+			<img class="contentbuttonimage" src="../images/content_button_icons/software.png">
+			<p class="centertext">Software</p>
+		</div>
+		</a> <a href="https://mpg13.github.io/repo/">
+		<div class="contentbutton">
+			<img class="contentbuttonimage" src="../images/content_button_icons/logo.png">
+			<p class="centertext">MyRepo</p>
+		</div>
+		</a> <a onClick="webDesc()">
+		<div class="contentbutton">
+			<img class="contentbuttonimage" src="../images/content_button_icons/html.png">
+			<p class="centertext">Websites</p>
+		</div>
+		</a> <a onClick="otherDesc()">
+		<div class="contentbutton">
+			<img class="contentbuttonimage" src="../images/content_button_icons/other.png">
+			<p class="centertext">Other</p>
+		</div>
+		</a> <br>
+		<div class="contentbuttonmore" onClick="softwareDesc()">Read More</div>
+		<div class="contentbuttonmore" onClick="repoDesc()">Read More</div>
+		<div class="contentbuttonmore" onClick="webDesc()">Expand</div>
+		<div class="contentbuttonmore" onClick="otherDesc()">Expand</div>
 	</div>
-	</a>
-	
-	<a href="https://mpg13.github.io/repo/">
-	<div class="contentbutton"><img class="contentbuttonimage" src="../images/content_button_icons/logo.png">
-		<p class="centertext">My Repo</p>
-	</div>
-	</a>
-	
-	<a href="https://tips-plus.github.io/">
-	<div class="contentbutton"><img class="contentbuttonimage" src="../images/content_button_icons/html.png">
-		<p class="centertext">Websites</p>
-	</div>
-	</a>
-	
-	<a href="https://tips-plus.github.io/">
-	<div class="contentbutton"><img class="contentbuttonimage" src="../images/content_button_icons/other.png">
-		<p class="centertext">Other</p>
-	</div>
-	</a>
 	<br>
-	<div class="contentbuttonmore" onClick="softwareDesc()">Read More</div>
-	<div class="contentbuttonmore" onClick="repoDesc()">Read More</div>
-	<div class="contentbuttonmore" onClick="webDesc()">Read More</div>
-	<div class="contentbuttonmore" onClick="otherDesc()">Read More</div>
+	<div id="softwareDescContent" class="descriptionContent">
+		<h1 style="text-align: left;">My Software</h1>
+		<hr>
+		<p><a href="https://github.com/MPG13/QuantumEntanglement-SpeedSystems">QESystems</a>: A Lightspeed Systems filter shutdown</p>
+		<p><a href="https://github.com/MPG13/crashface">CrashFace</a>: A Pebble smartwach watchface that "simulates" a crash</p>
+	</div>
+	<div id="repoDescContent" class="descriptionContent">
+		<h1 style="text-align: left;">My Repo</h1>
+		<hr>
+		<p><a href="https://mpg13.github.io/repo/depicts/undertime.html">UnderTime</a>: A tweak that allows full customization of the iPhone X clock</p>
+		<p><a href="https://mpg13.github.io/repo/depicts/twelven.html">Twelven</a>: A XenHTML Widget designed to imitate iOS 12"s smart lock screen</p>
+		<p><a href="https://mpg13.github.io/repo/depicts/xenimated.html">Xenimated</a>: A XenHTML Widget that sets animaed GIFs as your wallpaper</p>
+		<p><a href="https://mpg13.github.io/repo/depicts/spinningi4.html">Spinningi4</a>: A XenHTML Widget that adds a spinning iPhone to your lock screen</p>
+		<p><a href="https://mpg13.github.io/repo/depicts/counter.html">ItFuckingCounts</a>: What do you think it does?</p>
+	</div>
+	<div id="webDescContent" class="descriptionContent">
+		<h1 style="text-align: left;">My Websites</h1>
+		<hr>
+		<p><a href="https://mpg13.github.io">My Personal Website</a>: A website about me, what I do, and why I do it</p>
+		<p><a href="https://tips-plus.github.io">Tips+</a>: A website for iOS jailbreak tech support. Run by me, and designed by the master of web design, Artillect</p>
+		<p><a href="https://thegodhead.github.io">The GodHead</a>: Who even knows?</p>
+	</div>
+	<div id="otherDescContent" class="descriptionContent">
+		<h1 style="text-align: left;">My Other</h1>
+		<hr>
+		<p><a href="../other/Calendar.html">Westada Bell Schedule</a>: A Bell schedule so you can be notified when class is almost out, or if you just forget</p>
+		<p><a href="../downloads/Grade Tracker.xltx">Grade Tracker</a>: Excel Template for tracking your grades thruohgout high school</p>
+		<p><a href="https://www.youtube.com/user/micahcraft13/featured?">My YouTube Channel</a>: I'm a "content creator" that makes videos</p>
+	</div>
+	<br>
 </div>
-<br>
-	
-<div id="softwareDescContent" class="descriptionContent">
-	<p>The software I've written can be found on my github, linked above. Here are a few of my notable projects.</p>
-	<hr>
-	<p><a href="https://github.com/MPG13/QuantumEntanglement-SpeedSystems">QESystems</a>: A Lightspeed Systems filter shutdown</p>
-	<p><a href="https://github.com/MPG13/crashface">CrashFace</a>: A Pebble smartwach watchface that "simulates" a crash</p>
-</div>
-	
-<div id="repoDescContent" class="descriptionContent">
-	<p>My Cydia Repo contains some of my most famous work. Here's a quick list of what"s on it.</p>
-	<hr>
-	<p><a href="https://mpg13.github.io/repo/depicts/undertime.html">UnderTime</a>: A tweak that allows full customization of the iPhone X clock</p>
-	<p><a href="https://mpg13.github.io/repo/depicts/twelven.html">Twelven</a>: A XenHTML Widget designed to imitate iOS 12"s smart lock screen</p>
-	<p><a href="https://mpg13.github.io/repo/depicts/xenimated.html">Xenimated</a>: A XenHTML Widget that sets animaed GIFs as your wallpaper</p>
-	<p><a href="https://mpg13.github.io/repo/depicts/spinningi4.html">Spinningi4</a>: A XenHTML Widget that adds a spinning iPhone to your lock screen</p>
-	<p><a href="https://mpg13.github.io/repo/depicts/counter.html">ItFuckingCounts</a>: What do you think it does?</p>
-</div>
-	
-<div id="webDescContent" class="descriptionContent">
-	<p>I've written a few websites if you couldn"t tell. Here's a quick link to my best ones.</p>
-	<hr>
-	<p><a href="https://mpg13.github.io">My Personal Website</a>: A website about me, what I do, and why I do it</p>
-	<p><a href="https://tips-plus.github.io">Tips+</a>: A website for iOS jailbreak tech support. Run by me, and designed by the master of web design, Artillect</p>
-	<p><a href="https://thegodhead.github.io">The GodHead</a>: Who even knows?</p>
-</div>
-	
-<div id="otherDescContent" class="descriptionContent">
-	<p>I have other projects as well that are smaller and more or less random.</p>
-	<hr>
-	<p><a href="../other/Calendar.html">Westada Bell Schedule</a>: A Bell schedule so you can be notified when class is almost out, or if you just forget</p>
-	<p><a href="../downloads/Grade Tracker.xltx">Grade Tracker</a>: Excel Template for tracking your grades thruohgout high school</p>
-	<p><a href="https://www.youtube.com/user/micahcraft13/featured?">My YouTube Channel</a>: I'm a "content creator" that makes videos</p>
-	
-</div>
-<br>
-<center>
-	<a href="https://www.reddit.com/u/-mpg13-"><img class="smbutton" src="../images/social_media_icons/reddit.svg"></a> <a href="https://www.instagram.com/micah_p_gomez"><img class="smbutton" src="../images/social_media_icons/insta.svg"></a> <a href="https://www.twitter.com/not_MPG13"><img class="smbutton" src="../images/social_media_icons/twitter.svg"></a> <a href="https://www.youtube.com/user/micahcraft13/featured?"><img class="smbutton" src="../images/social_media_icons/youtube.svg"></a> <a href="https://www.github.com/MPG13"><img class="smbutton" src="../images/social_media_icons/github.svg"></a>
-</center>
-<br>
+<div id="footer-placeholder" class="footer-placeholder"></div>
 <script>
 
 openDesc = 0;
