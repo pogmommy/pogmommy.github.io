@@ -26,12 +26,13 @@ ul.navbar {
 
 .styled-select select {
 	display: none;
+	width: 100%;
 }
 	
 .styled-select{
 	background-color: #8BB174;
-	height: 40px;
-	font-size: 15px;
+	font-size: 40px;
+	padding-bottom: 5px;
 	-webkit-appearance: none;
 	-moz-appearance: none;
  	text-indent: 1px;
@@ -49,26 +50,26 @@ body {
 }
 h1 {
 	color: #3F4C1B;
-	font-size: 300%;
+	font-size: 700%;
 	text-align: center;
 }
 h2 {
 	color: #689323;
-	font-size: 64pt;
+	font-size: 400%;
 	text-align: center;
 	margin-top: -20px;
 	font-weight: 300;
 }
 h3 {
 	color: #3E711A;
-	font-size: 18pt;
+	font-size: 300%;
 	text-align: center;
 	font-weight: 100;
 	margin-bottom: -20px;
 }
 p {
 	color: #3F4C1B;
-	font-size: 18pt;
+	font-size: 300%;
 }
 a {
 	text-decoration: none;
@@ -82,7 +83,7 @@ li {
 
 /*special Body Info Starts*/
 .bodycontent {
-	padding: 40px 150px;
+	padding: 10% 10%;
 }
 .centerimage {
 	display: block;
