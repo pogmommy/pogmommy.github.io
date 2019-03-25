@@ -116,6 +116,9 @@ li {
 	margin: 3px 20px;
 	transition: 1s;
 }
+p.contentbuttontext{
+	font-size: 18pt;
+}
 .contentbutton:hover {
 	background-color: rgba(139, 177, 116, 0.5);
 	transition: 1s;
