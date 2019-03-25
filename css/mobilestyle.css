@@ -13,7 +13,6 @@
     display: none; 
 }
 
-/*navigation bar CSS Starts*/
 ul.navbar {
 	list-style-type: none;
 	margin: 0;
@@ -24,23 +23,20 @@ ul.navbar {
 	top: 0;
 	width: 100%;
 }
-li.navbar {
-	float: left;
+
+.styled-select select {
+	display: none;
 }
-li a {
-	display: block;
-	color: white;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
+	
+.styled-select{
+	background-color: #8BB174;
+	height: 40px;
+	font-size: 15px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+ 	text-indent: 1px;
+ 	text-overflow: '';
 }
-li.navbar a:hover:not(.statushome) {
-	background-color: #B5CA8D;
-}
-.statushome {
-	background-color: #3F4C1B;
-}
-/*Navigation Bar CSS Ends*/
 
 /*Standard Body CSS Starts*/
 
@@ -53,12 +49,12 @@ body {
 }
 h1 {
 	color: #3F4C1B;
-	font-size: 36pt;
+	font-size: 300%;
 	text-align: center;
 }
 h2 {
 	color: #689323;
-	font-size: 28pt;
+	font-size: 64pt;
 	text-align: center;
 	margin-top: -20px;
 	font-weight: 300;
@@ -86,7 +82,7 @@ li {
 
 /*special Body Info Starts*/
 .bodycontent {
-	padding: 40px 65px;
+	padding: 40px 150px;
 }
 .centerimage {
 	display: block;
@@ -150,7 +146,7 @@ li {
 .descriptionContent {
 	background-color: rgba(139, 177, 116, 0.5);
 	border-radius: 12.632px;
-	width: 500px;
+	width: 90%;
 	/*display: none;*/
 	margin-left: auto;
 	margin-right: auto;
