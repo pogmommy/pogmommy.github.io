@@ -28,47 +28,64 @@ var sc_security="fdd6bd3e";
 <div class="bodycontent">
 	<h1>My Projects</h1>
 	<p class="centertext">I've got a handful of open-source projects<br>Links to my most notable ones are available here.</p>
-	<div style="padding-left: auto;padding-right: auto;text-align: center;"> <a href="https://github.com/MPG13/">
-		<div class="contentbutton">
-			<img class="contentbuttonimage" src="../images/content_button_icons/software.png">
-			<p class="centertext">Software</p>
+	<div style="padding-left: auto;padding-right: auto;text-align: center;">
+		
+		<div style="display: inline-block">
+			<a href="https://github.com/MPG13/">
+				<div class="contentbutton">
+					<img class="contentbuttonimage" src="../images/content_button_icons/software.png">
+					<p class="centertext">Software</p>
+				</div><br>
+			</a>
+			<div class="contentbuttonmore" id="softwareDesc" onClick="softwareDesc()">Read More</div>
 		</div>
-		</a> <a href="https://mpg13.github.io/repo/">
-		<div class="contentbutton">
-			<img class="contentbuttonimage" src="../images/content_button_icons/logo.png">
-			<p class="centertext">MyRepo</p>
+		
+		<div style="display: inline-block">
+			<a href="https://mpg13.github.io/repo/">
+				<div class="contentbutton">
+					<img class="contentbuttonimage" src="../images/content_button_icons/logo.png">
+					<p class="centertext">MyRepo</p>
+				</div><br>
+			</a>
+			<div class="contentbuttonmore" id="repoDesc" onClick="repoDesc()">Read More</div>
 		</div>
-		</a> <a onClick="webDesc()">
-		<div class="contentbutton">
-			<img class="contentbuttonimage" src="../images/content_button_icons/html.png">
-			<p class="centertext">Essays</p>
+		
+		<div style="display: inline-block">
+			<a onClick="webDesc()">
+				<div class="contentbutton">
+					<img class="contentbuttonimage" src="../images/content_button_icons/html.png">
+					<p class="centertext">Essays</p>
+				</div><br>
+			</a>
+			<div class="contentbuttonmore" id="webDesc" onClick="webDesc()">Expand</div>
 		</div>
-		</a> <a onClick="otherDesc()">
-		<div class="contentbutton">
-			<img class="contentbuttonimage" src="../images/content_button_icons/other.png">
-			<p class="centertext">Other</p>
+		
+		<div style="display: inline-block">
+			<a onClick="otherDesc()">
+				<div class="contentbutton">
+					<img class="contentbuttonimage" src="../images/content_button_icons/other.png">
+					<p class="centertext">Other</p>
+				</div><br>
+			</a>
+			<div class="contentbuttonmore" id="otherDesc" onClick="otherDesc()">Expand</div>
 		</div>
-		</a> <br>
-		<div class="contentbuttonmore" id="softwareDesc" onClick="softwareDesc()">Read More</div>
-		<div class="contentbuttonmore" id="repoDesc" onClick="repoDesc()">Read More</div>
-		<div class="contentbuttonmore" id="webDesc" onClick="webDesc()">Expand</div>
-		<div class="contentbuttonmore" id="otherDesc" onClick="otherDesc()">Expand</div>
+		
 	</div>
 	<br>
 	<div id="softwareDescContent" class="descriptionContent">
 		<h1 style="text-align: left;">My Software</h1>
 		<hr>
 		<p><a href="https://github.com/MPG13/QuantumEntanglement-SpeedSystems">QESystems</a>: A Lightspeed Systems filter shutdown</p>
-		<p><a href="https://github.com/MPG13/crashface">CrashFace</a>: A Pebble smartwach watchface that "simulates" a crash</p>
+		<p><a href="https://flashbackios.github.io/">FlashBack</a>: A jailbreak setup manager, currently in beta</p>
 		<p><a href="https://mpg13.github.io">My Personal Website</a>: A website about me, what I do, and why I do it</p>
-		<p><a href="https://tips-plus.github.io">Tips+</a>: A website for iOS jailbreak tech support. Run by me, and designed by the master of web design, Artillect</p>
+		<p><a href="https://tips-plus.github.io">Tips+</a>: A website for iOS jailbreak tech support, managed by me and Artillect</p>
 		<p><a href="https://thegodhead.github.io">The GodHead</a>: Who even knows?</p>
 	</div>
 	<div id="repoDescContent" class="descriptionContent">
 		<h1 style="text-align: left;">My Repo</h1>
 		<hr>
-		<p><a href="https://mpg13.github.io/repo/depicts/undertime.html">UnderTime</a>: A tweak that allows full customization of the iPhone X clock</p>
-		<p><a href="https://mpg13.github.io/repo/depicts/twelven.html">Twelven</a>: A XenHTML Widget designed to imitate iOS 12"s smart lock screen</p>
+		<p><a href="https://mpg13.github.io/repo/depicts/undertime.html">UnderTime</a>: A tweak that allows full customization of the iPhone X clock on iOS 11</p>
+		<p><a href="https://mpg13.github.io/repo/depicts/twelven.html">Twelven</a>: A XenHTML Widget designed to imitate iOS 12's smart lock screen</p>
 		<p><a href="https://mpg13.github.io/repo/depicts/xenimated.html">Xenimated</a>: A XenHTML Widget that sets animaed GIFs as your wallpaper</p>
 		<p><a href="https://mpg13.github.io/repo/depicts/spinningi4.html">Spinningi4</a>: A XenHTML Widget that adds a spinning iPhone to your lock screen</p>
 		<p><a href="https://mpg13.github.io/repo/depicts/counter.html">ItFuckingCounts</a>: What do you think it does?</p>
@@ -84,7 +101,6 @@ var sc_security="fdd6bd3e";
 		<h1 style="text-align: left;">My Other</h1>
 		<hr>
 		<p><a href="../downloads/Financial Tracker.xlsm">Financial Tracker</a>: Excel sheet for tracking finances, making projections, viewing history, and properly budgeting!</p>
-		<p><a href="../other/Calendar.html">Westada Bell Schedule</a>: A Bell schedule so you can be notified when class is almost out, or if you just forget</p>
 		<p><a href="../downloads/Grade Tracker.xltx">Grade Tracker</a>: Excel Template for tracking your grades thruohgout high school</p>
 		<p><a href="https://www.youtube.com/user/micahcraft13/featured?">My YouTube Channel</a>: I'm a "content creator" that makes videos</p>
 	</div>
@@ -92,67 +108,6 @@ var sc_security="fdd6bd3e";
 </div>
 <div id="footer-placeholder" class="footer-placeholder"></div>
 <script>
-
-/*openDesc = 0;
-	
-function softwareDesc(){
-	if (openDesc == 1){
-		document.getElementById("softwareDescContent").style.display = "none";
-		openDesc = 0;
-	}
-	else{
-		document.getElementById("softwareDescContent").style.display = "block";
-		document.getElementById("repoDescContent").style.display = "none";
-		document.getElementById("otherDescContent").style.display = "none";
-		document.getElementById("webDescContent").style.display = "none";
-		openDesc = 1;
-	}
-}
-	
-function repoDesc(){
-	if (openDesc == 2){
-		document.getElementById("repoDescContent").style.display = "none";
-		openDesc = 0;
-	}
-	else{
-		document.getElementById("repoDescContent").style.display = "block";
-		document.getElementById("softwareDescContent").style.display = "none";
-		document.getElementById("otherDescContent").style.display = "none";
-		document.getElementById("webDescContent").style.display = "none";
-		openDesc = 2;
-	}
-	
-}
-function webDesc(){
-	if (openDesc == 3){
-		document.getElementById("webDescContent").style.display = "none";
-		openDesc = 0;
-	}
-	else{
-		document.getElementById("webDescContent").style.display = "block";
-		document.getElementById("softwareDescContent").style.display = "none";
-		document.getElementById("otherDescContent").style.display = "none";
-		document.getElementById("repoDescContent").style.display = "none";
-		
-		openDesc = 3;
-	}
-}
-
-function otherDesc(){
-	if (openDesc == 4){
-		document.getElementById("otherDescContent").style.display = "none";
-		openDesc = 0;
-	}
-	else{
-		document.getElementById("otherDescContent").style.display = "block";
-		document.getElementById("softwareDescContent").style.display = "none";
-		document.getElementById("repoDescContent").style.display = "none";
-		document.getElementById("webDescContent").style.display = "none";
-		
-		openDesc = 4;
-	}
-}*/
-	
 	
 $(document).ready(function(){
 	$("#softwareDescContent").hide();
