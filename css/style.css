@@ -5,99 +5,106 @@
 #8BB174 Pale Green
 #B5CA8D Desaturated Yellow-Green
 */
-
-/*need a gd font*/
-@import url('https://fonts.googleapis.com/css?family=Lato');
-
-.element::-webkit-scrollbar { 
-    display: none; 
-}
-
-/*navigation bar CSS Starts*/
-ul.navbar {
-	list-style-type: none;
+html, body {
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: #8BB174;
-	position: fixed;
-	top: 0;
-	width: 100%;
+	scrollbar-width: none;
 }
-li.navbar {
-	float: left;
+@media (prefers-color-scheme: dark) {
+	body {
+		background-image: linear-gradient(#8BB174, rgba(70, 70, 73, 1.00));
+		/*background-color: rgba(70,70,73,1.00);*/
+		color: white;
+	}
 }
-li a {
-	display: block;
-	color: white;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
+@media (prefers-color-scheme: light) {
+	body {
+		background-image: linear-gradient(#8BB174, linen);
+		/*background-color: linen;*/
+		color: black;
+	}
 }
-li.navbar a:hover:not(.statushome) {
-	background-color: #B5CA8D;
+.element::-webkit-scrollbar {
+	display: none;
 }
-.statushome {
-	background-color: #3F4C1B;
-}
-/*Navigation Bar CSS Ends*/
-
 /*Standard Body CSS Starts*/
-
 body {
 	margin: 0;
-	font-family: 'Lato', sans-serif;
-	background-color: linen;
-	cursor: url(../images/cursor.ico), auto;
-	
+	font-family: 'Ubuntu', sans-serif;
+	/*background-color: linen;*/
 }
 h1 {
-	color: #3F4C1B;
+	color: #728A31;
 	font-size: 36pt;
-	text-align: center;
 }
-h2 {
+h3 {
 	color: #689323;
 	font-size: 28pt;
 	text-align: center;
-	margin-top: -20px;
 	font-weight: 300;
 }
-h3 {
-	color: #3E711A;
+h2 {
+	color: #315F10;
 	font-size: 18pt;
-	text-align: center;
-	font-weight: 100;
-	margin-bottom: -20px;
+	font-weight: 50;
+}
+h4 {
+	color: #3F4C1B;
+	font-size: 12pt;
+	font-family: Courier New, Courier;
+	font-weight: 300;
 }
 p {
 	color: #3F4C1B;
 	font-size: 18pt;
+	text-align: left;
 }
 a {
 	text-decoration: none;
-	color: #689323;
-	cursor: url(../images/cursor.ico), auto;
+	color: #315F10;
 }
-li {
-/*	font-family: SanFran;*/
+ul > li {
+	display: inline-block;
+	/* You can also add some margins here to make it look prettier */
+	margin: 0px 25px;
+	zoom: 1;
+	vertical-align: middle;
 }
 /*Standard Body CSS Ends*/
-
 /*special Body Info Starts*/
 .bodycontent {
-	padding: 40px 65px;
+	text-align: left;
+	padding: 75px 100px;
 }
-.centerimage {
+.headingcontent {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 1100px;
+}
+.tilecontent {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-top: 30px;
+	width: 1100px;
+}
+.contentbutton {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	padding: 5px 25px;
+	border-radius: 8px;
+	width: 100%;
+	border: none;
+	background-image: linear-gradient(to right, rgba(139, 177, 116, 1.00), rgba(120, 150, 120, 1.00) 33%);
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+	transition: 1s;
 }
-.centertext {
-	text-align: center;
-}
-.homeimage{
-	width: 200px;
+.contentbutton:hover {
+	box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+	transition: 0.25s;
 }
 .smbutton {
 	background-color: rgba(139, 177, 116, 1);
@@ -107,55 +114,25 @@ li {
 	transition: 1s;
 }
 .smbutton:hover {
-	background-color: rgba(139, 177, 116, 0.5);
-	transition: 1s;
-}
-.contentbutton {
-	background-color: rgba(139, 177, 116, 1);
-	padding: 10px;
-	border-radius: 12.632px 12.632px 0px 0px;
-	width: 100px;
-	display: inline-block;
-	margin: 3px 20px;
-	transition: 1s;
-}
-.contentbutton:hover {
-	background-color: rgba(139, 177, 116, 0.5);
-	transition: 1s;
-}
-.contentbuttonimage {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 80px;
-	height: 80px;
-	padding-top: 10%;
-}
-.contentbuttonmore {
-	background-color: rgba(139, 177, 116, 1);
-	padding: 10px;
-	border-radius: 0px 0px 12.632px 12.632px;
-	width: 100px;
-	display: inline-block;
-	margin-top: 5px;
-	border: none;
-	z-index: 0;
-	margin: 3px 20px;
-	transition: 0.5s;
-}
-.contentbuttonmore:hover {
-	background-color: rgba(139, 177, 116, 0.5);
-	transition: 0.5s;
+	box-shadow: 5px 5px 10px black;
+	transition: 0.25s;
 }
 .descriptionContent {
-	background-color: rgba(139, 177, 116, 0.5);
-	border-radius: 12.632px;
-	width: 500px;
-	/*display: none;*/
-	margin-left: auto;
-	margin-right: auto;
-	padding: 1px 20px;
+	display: block;
+	padding: 25px;
+	margin-left: 10%;
+	border-radius: 8px;
+	width: 85%;
+	border: none;
+	background-color: rgba(139, 177, 116, 1.00);
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+	transition: 1s;
 }
-.footer-placeholder{
-	margin: -50px 0px 20px 0px;
+.descriptionContentImage {
+	border-radius: 10px;
+	width: 200px;
+}
+.footer-placeholder {
+	text-align: center;
+	width: 100%;
 }
