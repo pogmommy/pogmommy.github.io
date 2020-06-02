@@ -1,6 +1,6 @@
 <footer>
 	
-	<div id="overlay">
+	<div id="overlay" onclick="off()">
 		<div id="text">Black Lives Matter</div>
 	</div>
 	
@@ -11,4 +11,10 @@
 		<a href="mailto:mpg13@micahpgomez.dev"><img class="smbutton" src="/images/social_media_icons/email.png"></a>
 		<a href="sms:mpg13@micahpgomez.dev"><img class="smbutton" src="/images/social_media_icons/message.png"></a>
 	<h4>Micah Gomez (MPG13)</h4>
+	
+	<script>
+		function off() {
+			document.getElementById("overlay").style.display = "none";
+		}
+	</script>
 </footer>
