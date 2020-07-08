@@ -96,6 +96,7 @@ ul > li {
     margin: 0px 25px;
     zoom: 1;
     vertical-align: middle;
+	width:100%;
 }
 /*Standard Body CSS Ends*/
 /*special Body Info Starts*/
@@ -133,6 +134,8 @@ ul > li {
     transition: 0.25s;
 }
 .smbutton {
+	width: 40px;
+	opacity: 0.7;
     background-color: rgba(139, 177, 116, 1);
     padding: 10px;
     margin: 0px 15px;
@@ -167,6 +170,10 @@ ul > li {
     margin-left: 15px;
     margin-right: 25px;
 }
+.contentGroup{
+	display: none;
+}
+
 .footer-placeholder {
     text-align: center;
     width: 100%;

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Micah Gomez</title>
+<link rel="shortcut icon" href="images/favicon.ico">
+<link id="pagestyle" rel="stylesheet" href="/css/style.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/setup.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+
+<!-- Statcounter code for Personal Website
+http://mpg13.github.io on Dreamweaver --> 
+<script type="text/javascript">
+var sc_project=11679648; 
+var sc_invisible=1; 
+var sc_security="fdd6bd3e"; 
+</script> 
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript>
+<div class="statcounter"><a title="Web Analytics" href="http://statcounter.com/" target="_blank"><img class="statcounter" src="//c.statcounter.com/11679648/0/fdd6bd3e/1/" alt="Web Analytics"></a></div>
+</noscript>
+<!-- End of Statcounter Code --> 
+
+<!--<div id="header-placeholder"></div>-->
+<div class="bodycontent">
+    <div class="headingcontent">
+        <h1>Micah Gomez</h1>
+		<h2>Social Media Quick Links</h2>
+    </div>
+    <br>
+    <div>
+        <div class="tilecontent">
+            <button onClick="politicsDesc()" id="politicsDesc" class="contentbutton">
+            <p>Politics</p>
+            </button>
+            <div id="politicsContent" class="contentGroup">
+				<ul class="descriptionContent">
+                    <li>
+                        <p class="descriptionContentText">Protests
+							<br><br><a href="https://www.youtube.com/watch?v=iGxfNl9C6CQ&feature=youtu.be">How To Cover These Police Riots - Some More News &gt;</a>
+							<br><br><a href="https://www.youtube.com/watch?v=yMiO6fxrEE4&feature=youtu.be">This is what The George Floyd Riots Are Actually Like - Reckless Ben &gt;</a>
+							<br><br><a href="https://www.youtube.com/watch?v=O4ciwjHVHYg">How To Pretend Systemic Racism Doesn't Exist - Some More News &gt;</a>
+							</p>
+							
+                    </li>
+                </ul>
+				<ul class="descriptionContent">
+                    <li>
+                        <p class="descriptionContentText">Fascism
+						<br><br><a href="https://www.youtube.com/watch?v=iGxfNl9C6CQ&feature=youtu.be">How To Cover These Police Riots - Some More News &gt;</a>
+						<br><br><a href="https://www.youtube.com/playlist?list=PLkJemc4T5NYaTJVphMh1oGT5uYoKdFYzO">Life In The Fash Lane - Some More News Playlist &gt;</a>
+						<br><br><a href="https://www.youtube.com/watch?v=bgwS_FMZ3nQ&feature=youtu.be">The Philosophy of Antifa - Philosophy Tube &gt;</a>
+						</p>
+                    </li>
+                </ul>
+                <!--<ul class="descriptionContent">
+                    <li>
+                        <p class="descriptionContentText">Group Name
+                            <br><br><a href="#">Link name &gt;</a>
+							</p>
+                    </li>
+                </ul>-->
+            </div>
+            <br>
+			
+            <button onClick="donationDesc()" id="donationDesc" class="contentbutton">
+            <p>Donation & Petition Links</p>
+            </button>
+            <div id="donationContent" class="contentGroup">
+                <ul class="descriptionContent">
+                    <li>
+                        <p class="descriptionContentText">Trans Rights
+							<br><br><a href="https://transequality.org/">National Center for Transgender Equality &gt;</a>
+							</p>
+                    </li>
+                </ul>
+                <ul class="descriptionContent">
+                    <li>
+                        <p class="descriptionContentText">Black Lives Matter
+						<br><br><a href="https://blacklivesmatters.carrd.co/">Black Lives Matter Carrd Collection &gt;</a>
+						</p>
+                    </li>
+                </ul>
+                <!--<ul class="descriptionContent">
+                    <li>
+                        <p class="descriptionContentText">Group Name
+                            <br><br><a href="#">Link name &gt;</a>
+							</p>
+                    </li>
+                </ul>-->
+            </div>
+            <br>
+			
+            <!--<button onClick="ThirdDesc()" id="ThirdDesc" class="contentbutton">
+            <p>Written Works</p>
+            </button>
+            <div id="ThirdContent" class="contentGroup">
+                <ul class="descriptionContent">
+                    <li>
+                        <p class="descriptionContentText">Group Name
+                            <br><br><a href="#">Link name &gt;</a>
+							</p>
+                    </li>
+                </ul>
+            </div>
+            <br>-->
+			
+            <!--<button onClick="FourthDesc()" id="FourthDesc" class="contentbutton">
+            <p>Fourth Section</p>
+            </button>
+            <div id="FourthContent" class="contentGroup">
+                <!--<ul class="descriptionContent">
+                    <li>
+                        <p class="descriptionContentText">Group Name
+                            <br><br><a href="#">Link name &gt;</a>
+							</p>
+                    </li>
+                </ul>
+            </div>
+            <br>-->
+			
+			<button onclick="window.location.href='/'" class="contentbutton">
+			<p>My Home Page</p>
+            </button>
+			<br>
+        </div>
+    </div>
+</div>
+<div id="footer-placeholder" class="footer-placeholder"></div>
+<script>
+
+function isIE() {
+	  ua = navigator.userAgent;
+	  /* MSIE used to detect old browsers and Trident used to newer ones*/
+	  var is_ie = ua.indexOf("MSIE ") > -1 || ua.indexOf("Trident/") > -1;
+	  return is_ie; 
+}
+
+if (isIE()){
+	alert("Please come back when you've found yourself using a modern browser. Thanks!");
+	window.location.href = "https://www.mozilla.org/firefox/";
+}
+
+</script> 
+<script>
+$(document).ready(function(){
+	$("#politicsDesc").click(function(){
+		$("#politicsContent").slideToggle();
+	});
+	$("#donationDesc").click(function(){
+		$("#donationContent").slideToggle();
+	});
+	$("#webDesc").click(function(){
+		$("#webDescContent").slideToggle();
+	});
+	$("#otherDesc").click(function(){
+		$("#otherDescContent").slideToggle();
+	});
+});
+</script>
+</body>
+</html>
