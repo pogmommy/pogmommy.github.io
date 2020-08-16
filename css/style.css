@@ -36,6 +36,8 @@ html, body {
     background-attachment: fixed;
     margin: 0;
     scrollbar-width: none;
+	max-width: 100%;
+    overflow-x: hidden;
 }
 @media (prefers-color-scheme: dark) {
     body {
