@@ -134,13 +134,13 @@ ul > li {
     transition: 0.25s;
 }
 .smbutton {
-	width: 40px;
+	width: 30px;
 	opacity: 0.7;
     background-color: rgba(139, 177, 116, 1);
     padding: 10px;
-    margin: 0px 15px;
+    margin: 0px 10px;
     border-radius: 12.632px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     transition: 1s;
 }
 .smbutton:hover {
