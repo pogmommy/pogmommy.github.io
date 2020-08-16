@@ -185,7 +185,7 @@ ul > li {
         font-size: 16pt;
     }
     .bodycontent {
-        padding: 75px 100px;
+        padding: 25px 100px;
     }
     .descriptionContentImage {
 	    width: 100px;
@@ -209,13 +209,13 @@ ul > li {
         font-size: 10pt;
     }
     .bodycontent {
-        padding: 25px 20px;
+        padding: 10px 20px;
     }
     .descriptionContentImage {
         width: 50px;
     }
     .descriptionContentText{
-        width: 65%;
+        width: 60%;
     }
     h2 {
         font-size: 14pt;
