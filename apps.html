@@ -30,79 +30,23 @@ async></script>
 <div class="bodycontent">
     <div class="headingcontent">
         <h1>Micah Gomez</h1>
-        <h4>var onlineAlias:String = "MPG13"</h4>
-		<h2>I'm a 19 year old iOS and web developer, as well as spreadsheet designer and more.<br>
-            Check out my <a href="downloads/MicahGomezResume.pdf">resume</a>!</h2>
+        <h4>var onlineAlias = String("MPG13")</h4>
+		<h2>I'm a 19 year old iOS &amp; web developer.<br>
+            I also make excel spreadsheets, and sometimes videos.<br>Check out my projects below!</h2>
     </div>
     <div>
         <div class="tilecontent">
-		<button onClick="appDesc()" id="appDesc" class="contentbutton">
-            <p>Apps</p>
-            </button>
-            <div id="appDescContent" class="contentGroup">
-				<ul class="descriptionContent">
-                    <li> <a href="#"><img src="images/contentimages/nookmusic.png" class="descriptionContentImage"></a>
-                        <p class="descriptionContentText">AC Tape Deck BETA
-							<br><br>
-							An iOS app that plays music based on the hour of the day, designed for emulating real-time soundtracks like in Animal Crossing. Supports up to 5 playlists, and features a clock in the Animal Crossing font on the media controls screen.
-							<br><br>
-                            <a href="#">Join the TestFlight  &gt;</a>
-						</p>
-                    </li>
-                </ul>
-            </div>
-            <br>
             <button onClick="softwareDesc()" id="softwareDesc" class="contentbutton">
-            <p>Software</p>
+            <p>AC Tape Deck</p>
             </button>
             <div id="softwareDescContent" class="contentGroup">
 				<ul class="descriptionContent">
                     <li> <a href="#"><img src="images/contentimages/nookmusic.png" class="descriptionContentImage"></a>
-                        <p class="descriptionContentText">Nook Music
+                        <p class="descriptionContentText">AC Tape Deck
 							<br><br>
-							An iOS app that plays Animal Crossing music according to the time of day. Includes music from New Horizons, New Leaf, City Folk/Wild World, and Population: Growing.<br>Large file size is due to music being stored in the app for offline listening.
+							An iOS app that plays Animal Crossing music according to the time of day. Includes music from New Horizons, New Leaf, City Folk/Wild World, and Population: Growing.<br>Features background playback and can update the music on the hour while in the background. Large file size is due to music being stored in the app for offline listening.
 							<br><br>
-                            <a href="https://github.com/MPG13/Nook-Music/releases/">Download Currently Unavailable &gt;</a>
-						</p>
-                    </li>
-                </ul>
-                <ul class="descriptionContent">
-                    <li> <a href="#"><img src="images/contentimages/flashback.png" class="descriptionContentImage"></a>
-                        <p class="descriptionContentText">FlashBack
-							<br><br>
-                            A setup manager for iOS 11 - 13. Allows saving tweak preferences, icon layouts, and wallpapers.
-							<br><br>
-                            <a href="https://repo.dynastic.co/package/flashback/">Download it on Dynastic &gt;</a>
-						</p>
-                    </li>
-                </ul>
-                <ul class="descriptionContent">
-                    <li> <a href="#"><img src="images/contentimages/qesystems.png" class="descriptionContentImage"></a>
-                        <p class="descriptionContentText">QESystems
-							<br><br>
-                            An experimental bypass for wifi restrictions set in place by LightSpeed systems internet filters. Is now deprecated.
-							<br><br>
-                            <a href="https://github.com/MPG13/QuantumEntanglement-SpeedSystems">View the Github repo &gt;</a>
-						</p>
-                    </li>
-                </ul>
-                <ul class="descriptionContent">
-                    <li> <a href="#"><img src="images/contentimages/undertime.png" class="descriptionContentImage"></a>
-                        <p class="descriptionContentText">UnderTime
-						<br><br>
-                            A tweaks to customize the iPhone X status bar using the standard NSDate format.
-							<br><br>
-                            <a href="https://micahpgomez.dev/repo">Download it my repo &gt;</a>
-						</p>
-                    </li>
-                </ul>
-                <ul class="descriptionContent">
-                    <li> <a href="#"><img src="images/contentimages/Tips-icon.png" class="descriptionContentImage"></a>
-                        <p class="descriptionContentText">Tips+
-							<br><br>
-                            A website with a handful of tools for learning the basics of iOS jailbreaking.
-							<br><br>
-                            <a href="https://tips-plus.github.io">Visit the page &gt;</a>
+                            <a href="https://github.com/MPG13/Nook-Music/releases/download/v1.1/Nook.Music.ipa">Download Now &gt;</a>
 						</p>
                     </li>
                 </ul>
@@ -239,9 +183,6 @@ if (isIE()){
 <script>
 $(document).ready(function(){
 	
-	$("#appDesc").click(function(){
-		$("#appDescContent").slideToggle();
-	});
 	$("#softwareDesc").click(function(){
 		$("#softwareDescContent").slideToggle();
 	});
