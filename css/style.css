@@ -103,7 +103,7 @@ ul > li {
     margin: 0px 25px;
     zoom: 1;
     vertical-align: middle;
-	width:100%;
+	width:auto;
 }
 /*Standard Body CSS Ends*/
 /*special Body Info Starts*/
@@ -165,9 +165,9 @@ ul > li {
 .descriptionContentText {
     width: 65%;
     float: left;
+	margin-right: 5%;
 }
 .descriptionContentTextFullWidth{
-    width: auto;
 }
 .descriptionContentImage {
     width: 100px;
