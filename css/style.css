@@ -96,6 +96,7 @@ p {
     color: #3F4C1B;
     font-size: 18pt;
     text-align: left;
+	display: block;
 }
 ul > li {
     display: inline-block;
@@ -163,11 +164,8 @@ ul > li {
     transition: 1s;
 }
 .descriptionContentText {
-    width: 65%;
     float: left;
 	margin-right: 5%;
-}
-.descriptionContentTextFullWidth{
 }
 .descriptionContentImage {
     width: 100px;
@@ -234,5 +232,6 @@ ul > li {
 }
 
 .descriptionContentTextFullWidth{
-    width: auto;
+	display: block;
+    width: 100%;
 }
