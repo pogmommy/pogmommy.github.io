@@ -166,6 +166,16 @@ async></script>
                 </ul>
                 <ul class="descriptionContent">
                     <li>
+                        <p class="descriptionContentText descriptionContentTextFullWidth">Economic Inequality in Comic Book Stories
+							<br><br>
+                            An analysis of economic inequality and class relations in comic books and comic book-adjacent media.
+							<br><br>
+							<a href="/downloads/essays/ComicsAndPopulism.docx">Download it now ➤</a>
+						</p>
+					</li>
+                </ul>
+                <ul class="descriptionContent">
+                    <li>
                         <p class="descriptionContentText descriptionContentTextFullWidth">Unbecoming
 							<br><br>
                             A memoir written about my experiences within the Mormon faith and my departure from it.
@@ -182,6 +192,22 @@ async></script>
 							<br><br>
 							<a href="/downloads/essays/The_RED_Act.docx">Download it now ➤</a>
 						</p>
+					</li>
+                </ul>
+            </div>
+            <br>
+		<button onClick="wrongDesc()" id="wrongDesc" class="contentbutton">
+            <p>Everything I've Ever Gotten Wrong</p>
+            </button>
+            <div id="wrongDescContent" class="contentGroup">
+			<ul class="descriptionContent">
+                    <li>
+                        <p class="descriptionContentText descriptionContentTextFullWidth">Nothing</p>
+					</li>
+                </ul>
+                <ul class="descriptionContent">
+                    <li>
+                        <p class="descriptionContentText descriptionContentTextFullWidth">Most of the things I said prior to 2020, presumably.</p>
 					</li>
                 </ul>
             </div>
@@ -209,6 +235,9 @@ if (isIE()){
 $(document).ready(function(){
 	$("#softwareDesc").click(function(){
 		$("#softwareDescContent").slideToggle();
+	});
+	$("#wrongDesc").click(function(){
+		$("#wrongDescContent").slideToggle();
 	});
 	$("#webDesc").click(function(){
 		$("#webDescContent").slideToggle();
