@@ -104,7 +104,7 @@ ul > li {
     margin: 0px 25px;
     zoom: 1;
     vertical-align: middle;
-	width:auto;
+	width:-webkit-fill-available;
 }
 /*Standard Body CSS Ends*/
 /*special Body Info Starts*/
