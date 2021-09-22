@@ -183,12 +183,19 @@ ul > li {
     text-align: center;
     width: 100%;
 }
+
+
+
 /*mobile setup*/
 /* If the screen size is 601px or more, set the font-size of <div> to 80px */
 @media only screen and (min-width: 601px) {
     p {
         font-size: 16pt;
     }
+	.citation {
+		font-size: 12pt;
+		font-style: italic;
+	}
     .bodycontent {
         padding: 25px 100px;
     }
@@ -210,6 +217,10 @@ ul > li {
     p {
         font-size: 12pt;
     }
+	.citation {
+		font-size: 8pt;
+		font-style: italic;
+	}
     li > p{
         font-size: 10pt;
     }
