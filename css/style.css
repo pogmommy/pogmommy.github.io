@@ -133,7 +133,7 @@ ul > li {
     border-radius: 8px;
     width: 100%;
     border: none;
-    background-image: linear-gradient(to right, rgba(139, 177, 116, 1.00), rgba(120, 150, 120, 1.00) 33%);
+    background-image: linear-gradient(to right, rgba(120, 150, 120, 1.00), rgba(139, 177, 116, 1.00) 60%);
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
     transition: 1s;
 }
