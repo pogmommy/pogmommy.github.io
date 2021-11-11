@@ -195,6 +195,7 @@ ul > li {
 	.citation {
 		font-size: 12pt;
 		font-style: italic;
+        word-wrap:break-word;
 	}
     .bodycontent {
         padding: 25px 100px;
@@ -220,6 +221,7 @@ ul > li {
 	.citation {
 		font-size: 8pt;
 		font-style: italic;
+        word-wrap:break-word;
 	}
     li > p{
         font-size: 10pt;
