@@ -106,6 +106,15 @@ ul > li {
     vertical-align: middle;
 	width:-webkit-fill-available;
 }
+
+#mkartdata {
+  width: 100%;
+}
+#mkartdata td, #mkartdata th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+#mkartdata tr:nth-child(even){background-color: rgba(255, 255, 255, 0.25);}
 /*Standard Body CSS Ends*/
 /*special Body Info Starts*/
 .bodycontent {
@@ -197,6 +206,9 @@ ul > li {
 		font-style: italic;
         word-wrap:break-word;
 	}
+    .subSectionTitle {
+		font-weight: bold;
+	}
     .bodycontent {
         padding: 25px 100px;
     }
@@ -222,6 +234,9 @@ ul > li {
 		font-size: 8pt;
 		font-style: italic;
         word-wrap:break-word;
+	}
+    .subSectionTitle {
+		font-weight: bold;
 	}
     li > p{
         font-size: 10pt;
