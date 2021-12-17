@@ -257,6 +257,13 @@ ul > li {
         width: 80%;
         margin: auto;
     }
+    #mkartdata tr:nth-child(4n+2) > *:nth-child(1) {
+         display: none;
+    }
+    #mkartdata tr:nth-child(1) > *:nth-child(1) {
+         display: none;
+    }
+    
 }
 
 .descriptionContentTextFullWidth{
