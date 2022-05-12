@@ -49,7 +49,7 @@ html, body {
 }
 @media (prefers-color-scheme: light) {
     body {
-        background-image: linear-gradient(#32CCFE, #D95AE5);
+        background-image: linear-gradient(#32CCFE, #DA74E5);
         /*background-image: linear-gradient(#8BB174, linen);*/
         /*background-color: linen;*/
         color: black;
