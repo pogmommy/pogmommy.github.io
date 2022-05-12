@@ -209,7 +209,7 @@ async></script>
 							<br><br>
                             An analysis of economic inequality and class relations in comic books and comic book-adjacent media.
 							<br><br>
-							<a href="/downloads/essays/ComicsAndPopulism.docx">Download it now ➤</a>
+							<a href="#" onclick="mDL('/downloads/essays/ComicsAndPopulism.docx')">Download it now ➤</a>
 						</p>
 					</li>
                 </ul>
@@ -219,7 +219,7 @@ async></script>
 							<br><br>
                             A memoir written about my experiences within the Mormon faith and my departure from it.
 							<br><br>
-							<a href="/downloads/essays/Unbecoming.docx">Download it now ➤</a>
+							<a href="#" onclick="mDL('/downloads/essays/Unbecoming.docx')">Download it now ➤</a>
 						</p>
 					</li>
                 </ul>
@@ -229,7 +229,7 @@ async></script>
 							<br><br>
                             A mock congress bill to prompt reform of religious tax exemption.
 							<br><br>
-							<a href="/downloads/essays/The_RED_Act.docx">Download it now ➤</a>
+							<a href="#" onclick="mDL('/downloads/essays/The_RED_Act.docx')">Download it now ➤</a>
 						</p>
 					</li>
                 </ul>
@@ -241,34 +241,7 @@ async></script>
 <div id="footer-placeholder" class="footer-placeholder"></div>
 <script>
 
-var domain = ""
-if (window !== window.parent){
-	domain = "http://pogmom.me/";
-} else {
-	domain = "http://micahpgomez.com/";
-}
-console.log(domain)
 
-function mRdr(a){
-	console.log("MicahRedirect!");
-	console.log(arguments[0]);
-	var newurl = domain + arguments[0];
-	console.log(newurl);
-	//parent.location.src = newurl;
-	window.top.location.href = newurl;
-}
-
-function mExt(a){
-	console.log("MicahExternal!");
-	console.log(arguments[0]);
-	window.open(arguments[0]);
-}
-
-function mDL(a){
-	console.log("MicahDownload!");
-	console.log(arguments[0]);
-	window.top.location.href = arguments[0];
-}
 </script> 
 <script>
 $(document).ready(function(){
