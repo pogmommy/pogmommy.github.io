@@ -241,23 +241,11 @@ async></script>
 <div id="footer-placeholder" class="footer-placeholder"></div>
 <script>
 
-function isIE() {
-	  ua = navigator.userAgent;
-	  /* MSIE used to detect old browsers and Trident used to newer ones*/
-	  var is_ie = ua.indexOf("MSIE ") > -1 || ua.indexOf("Trident/") > -1;
-	  return is_ie; 
-}
-
-if (isIE()){
-	alert("Please come back when you've found yourself using a modern browser. Thanks!");
-	window.location.href = "https://www.mozilla.org/firefox/";
-}
-
 var domain = ""
 if (window !== window.parent){
-	domain = "pogmom.me/";
+	domain = "http://pogmom.me/";
 } else {
-	domain = "micahpgomez.com/";
+	domain = "http://micahpgomez.com/";
 }
 console.log(domain)
 
@@ -266,6 +254,8 @@ function mRdr(a){
 	console.log(arguments[0]);
 	var newurl = domain + arguments[0];
 	console.log(newurl);
+	//parent.location.src = newurl;
+	window.top.location.href = newurl;
 }
 
 function mExt(a){
