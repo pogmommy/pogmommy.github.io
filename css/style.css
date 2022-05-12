@@ -40,30 +40,15 @@ html, body {
 	max-width: 100%;
     overflow-x: hidden;
 }
-/*@media (prefers-color-scheme: dark) {
-    body {
-        background-image: linear-gradient(#32CCFE, #C700D7);
-        /*background-color: rgba(70,70,73,1.00);*/
-        color: white;
-    }
-}
-@media (prefers-color-scheme: light) {
-    body {
-        background-image: linear-gradient(#32CCFE, #DA74E5);
-        /*background-image: linear-gradient(#8BB174, linen);*/
-        /*background-color: linen;*/
-        color: black;
-    }
-}*/
 @media (prefers-color-scheme: dark) {
-    html {
+    body {
         background-image: linear-gradient(#32CCFE, #C700D7);
         /*background-color: rgba(70,70,73,1.00);*/
         color: white;
     }
 }
 @media (prefers-color-scheme: light) {
-    html {
+    body {
         background-image: linear-gradient(#32CCFE, #DA74E5);
         /*background-image: linear-gradient(#8BB174, linen);*/
         /*background-color: linen;*/
