@@ -42,14 +42,14 @@ html, body {
 }
 @media (prefers-color-scheme: dark) {
     body {
-        background-image: linear-gradient(#8BB174, rgba(70, 70, 73, 1.00));
+        background-image: linear-gradient(#32CCFE, #C700D7);
         /*background-color: rgba(70,70,73,1.00);*/
         color: white;
     }
 }
 @media (prefers-color-scheme: light) {
     body {
-        background-image: linear-gradient(#D95AE5, #32CCFE);
+        background-image: linear-gradient(#32CCFE, #D95AE5);
         /*background-image: linear-gradient(#8BB174, linen);*/
         /*background-color: linen;*/
         color: black;
