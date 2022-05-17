@@ -189,7 +189,11 @@ ul > li {
     transition: 1s;
 }
 .dcLeft{
-	margin-left: 5%
+	margin-left: 2.5%
+}
+.dcHeader{
+	margin-top: -78px;
+	padding-top: 100px;
 }
 /*.descriptionContent {
     padding: 20px 0;
