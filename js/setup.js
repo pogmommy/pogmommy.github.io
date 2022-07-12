@@ -9,12 +9,12 @@ var domain = ""
 if (window !== window.parent){
 	domain = "http://pogmom.me/";
 } else {
-	domain = "http://micahpgomez.com/";
+	domain = "http://pogmom.me/";
 }
 console.log(domain)
 
-function mRdr(a){
-	console.log("MicahRedirect!");
+function pRdr(a){
+	console.log("PenRedirect!");
 	console.log(arguments[0]);
 	var newurl = domain + arguments[0];
 	console.log(newurl);
@@ -22,14 +22,14 @@ function mRdr(a){
 	window.top.location.href = newurl;
 }
 
-function mExt(a){
-	console.log("MicahExternal!");
+function pExt(a){
+	console.log("PenExternal!");
 	console.log(arguments[0]);
 	window.open(arguments[0]);
 }
 
-function mDL(a){
-	console.log("MicahDownload!");
+function pDL(a){
+	console.log("PenDownload!");
 	console.log(arguments[0]);
 	window.top.location.href = arguments[0];
 }
