@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Penelope Gomez</title>
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link id="pagestyle" rel="stylesheet" href="/css/style.css">
+<script src="./js/jquery.min.js"></script> 
+<script src="js/setup.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<style>
+    
+    /*body,html{
+      background:url(https://i.imgur.com/iCZSjWa.png) center no-repeat;
+      background-size:cover;
+      min-height:100%;
+      font-family: 'Roboto Mono',  monospace;
+      font-size:15px;
+      display:flex;
+      align-items:center;
+      justify-content:center
+    }
+    body:before{
+      content:""; width:100%; height:100%; background:rgba(0,0,0,0.8);
+      position:absolute;
+      top:0;
+      left:0;
+      z-index:10
+    }
+    h1,h2{
+      font-weight:400;
+      letter-spacing:-2px
+    }*/
+    .card {
+      position: relative;
+      margin: 0 auto;
+      padding: 0;
+      width: 100%;
+      min-width: 300px;
+      background: #ffffff;
+      border-radius: 5px;
+      box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.3);
+      -webkit-animation: fadein 2s;
+              animation: fadein 2s;
+      overflow:hidden;
+      z-index: 0;
+    }
+
+    .header {
+      position: relative;
+      z-index:0;
+      width: 100%;
+      height: 180px;
+      box-shadow:0 4px 3px #0002;
+      overflow: hidden;
+    }
+    .card img{
+      width:100%;
+      transition: all 1s ease;
+      z-index:0;
+    }
+    .image {
+      width: 100%;
+      height: 180px;
+      cursor:crosshair;
+      overflow:hidden;
+    }
+
+    .image:hover img{
+      -webkit-transform: scale(1.2, 1.2);
+              transform: scale(1.2, 1.2);
+    }
+
+    .header h2{
+      position:absolute;
+      bottom:0;
+      margin:0;
+      width:100%;
+      padding:0 10px;
+      color:#fff;
+      text-transform:uppercase;
+      pointer-events:none;
+      background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+    }
+    .icon {
+      position: absolute;
+      background:#fff;
+      right: 10px;
+      top: 135px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      overflow:hidden;
+      border:3px solid #fff;
+      box-shadow:0 4px 3px #0002;
+      z-index:9
+    }
+    #rest{
+      padding:30px 15px;
+      line-height:30px;
+      color:#000d42
+    }
+    
+</style>
+<script>
+    
+    //based on a pen by @robinselmer
+    var url = "https://api.minetools.eu/ping/167.114.119.114/25566";
+     
+    $.getJSON(url, function(r) {
+        //data is the JSON string
+     if(r.error){
+        $('#rest').html('Server Offline');
+       return false;
+     }
+    var pl = '';
+     if(r.players.sample.length > 0 ){ pl = '<br>OP: '+r.players.sample[0].name;  }
+      $('#rest').html(r.description.replace(/§(.+?)/gi, '')+'<br><b>Players Online:</b> '+r.players.online+pl);
+     $('#favicon').attr('src', r.favicon);
+        
+    });
+    
+</script>
+
+<body>
+
+<!-- Statcounter code for Personal Website
+http://mpg13.github.io on Dreamweaver --> 
+<script type="text/javascript">
+var sc_project=11679648; 
+var sc_invisible=1;
+var sc_security="fdd6bd3e"; 
+</script> 
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript>
+<div class="statcounter"><a title="Web Analytics" href="http://statcounter.com/" target="_blank"><img class="statcounter" src="//c.statcounter.com/11679648/0/fdd6bd3e/1/" alt="Web Analytics"></a></div>
+</noscript>
+<!-- End of Statcounter Code --> 
+
+<!--<div id="header-placeholder"></div>-->
+<div class="bodycontent">
+    <div class="headingcontent">
+        <h1>Penelope Gomez (Pogmommy)</h1>
+		<h2>Public Minecraft Server<br></h2>
+    </div>
+    
+    
+    
+    <div class="card"> <div class="icon"><img src="https://pbs.twimg.com/profile_images/808180587605331969/u-CULTwl_400x400.jpg" id="favicon"></div><div class="header">
+      <div class="image"> <img src="https://pbs.twimg.com/media/C2bx8KGWQAEORsE.jpg" alt="" /> </div>
+     
+      <h2>mc.pogmom.me</h2>
+      </div>
+      <div id="rest">Loading ...</div>
+    </div>
+
+    
+    <iframe src="https://titanembeds.com/embed/429545272616681473?defaultchannel=725800225658110052&fixedsidenav=false&userscalable=false&theme=IceWyvern" height="600" width="100%" frameborder="0"></iframe>
+    
+    
+    
+    
+    <div>
+        <div class="tilecontent">
+            <button id="personalDesc" class="contentbutton">
+            <p>Personal Links</p>
+            </button>
+            <div id="personalDescContent" class="contentGroup">
+                <button class="subcontentbutton dcLeft" onclick="pExt('https://pogmom.me')">
+                    <img src="images/social_media_icons/home.png" class="descriptionContentSMImage">
+                        <p class="descriptionContentText">Home
+                            <br><br>
+                            pogmom.me
+                        </p>
+                        <br>
+                </button>
+                <button id="softwareDesc" class="subcontentbutton dcLeft" onclick="pExt('https://twt.pogmom.me')">
+                    <img src="images/social_media_icons/twitter.png" class="descriptionContentSMImage">
+                        <p class="descriptionContentText">Twitter
+                            <br><br>
+                            @pogmommy
+                        </p>
+                        <br>
+                </button>
+                <button class="subcontentbutton dcLeft" onclick="pExt('https://yt.pogmom.me')">
+                    <img src="images/social_media_icons/youtube.png" class="descriptionContentSMImage">
+                        <p class="descriptionContentText">Youtube
+                            <br><br>
+                            Pogmommy
+                        </p>
+                        <br>
+                </button>
+                <button class="subcontentbutton dcLeft" onclick="pExt('https://dis.pogmom.me')">
+                    <img src="images/social_media_icons/discord.png" class="descriptionContentSMImage">
+                        <p class="descriptionContentText">Discord Server
+                            <br><br>
+                            Penelope's Palace
+                        </p>
+                        <br>
+                </button>
+                <button class="subcontentbutton dcLeft" onclick="pExt('https://discordapp.com/users/265252445062430724')">
+                    <img src="images/social_media_icons/discord.png" class="descriptionContentSMImage">
+                        <p class="descriptionContentText">Discord Profile
+                            <br><br>
+                            @PogMommy#0001
+                        </p>
+                        <br>
+                </button>
+                <button class="subcontentbutton dcLeft" onclick="pExt('https://insta.pogmom.me')">
+                    <img src="images/social_media_icons/insta.png" class="descriptionContentSMImage">
+                        <p class="descriptionContentText">Instagram
+                            <br><br>
+                            @penelopeogomez
+                        </p>
+                        <br>
+                </button>
+                <button class="subcontentbutton dcLeft" onclick="pExt('https://git.pogmom.me')">
+                    <img src="images/social_media_icons/github.png" class="descriptionContentSMImage">
+                        <p class="descriptionContentText">Github
+                            <br><br>
+                            Pogmom
+                        </p>
+                        <br>
+                </button>
+                <button class="subcontentbutton dcLeft" onclick="pExt('mailto:penelope@pogmom.me')">
+                    <img src="images/social_media_icons/email.png" class="descriptionContentSMImage">
+                        <p class="descriptionContentText">Email
+                            <br><br>
+                            penelope@pogmom.me
+                        </p>
+                        <br>
+                </button>
+                <button class="subcontentbutton dcLeft" onclick="pExt('sms:penelope@pogmom.me')">
+                    <img src="images/social_media_icons/message.png" class="descriptionContentSMImage">
+                        <p class="descriptionContentText">Message
+                            <br><br>
+                            penelope@pogmom.me
+                        </p>
+                        <br>
+                </button>
+                <button class="subcontentbutton dcLeft" onclick="pExt('https://merch.pogmom.me')">
+                    <img src="images/social_media_icons/shop.png" class="descriptionContentSMImage">
+                        <p class="descriptionContentText">Merch Store
+                            <br><br>
+                            Pogmommy Products
+                        </p>
+                        <br>
+                </button>
+            </div>
+            <br>
+            <button id="otherDesc" class="contentbutton">
+            <p>Other</p>
+            </button>
+            <div id="otherDescContent" class="contentGroup">
+                <button id="softwareDesc" class="subcontentbutton dcLeft" onclick="pExt('https://pogmom.me/resources.html')">
+                    <img src="images/contentimages/links/citation.png" class="descriptionContentSMImage">
+                        <p class="descriptionContentText">Resources
+                            <br><br>
+                            Citations & Resources
+                        </p>
+                        <br>
+                </button>
+            </div>
+            <br>
+        </div>
+    </div>
+</div>
+<div id="footer-placeholder" class="footer-placeholder"></div>
+<script>
+
+
+</script> 
+<script>
+$(document).ready(function(){
+	$("#personalDesc").click(function(){
+		$("#personalDescContent").slideToggle();
+	});
+	$("#otherDesc").click(function(){
+		$("#otherDescContent").slideToggle();
+	});
+});
+</script>
+</body>
+</html>
