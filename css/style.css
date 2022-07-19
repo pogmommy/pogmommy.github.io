@@ -160,7 +160,27 @@ ul > li {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
     transition: 1s;
 }
+.subcontentbutton {
+    /*display: block;*/
+    /*margin-left: auto;*/
+    margin-top: 1%;
+    margin-bottom: 0.5%;
+    margin-right: auto;
+    padding: 20px 25px;
+    border-radius: 8px;
+    width: 97.5%;
+    border: none;
+    /*background-image: linear-gradient(to right, rgba(120, 150, 120, 1.00), rgba(139, 177, 116, 1.00) 60%);*/
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: saturate(120%) blur(10px);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    transition: 1s;
+}
 .contentbutton:hover {
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+    transition: 0.25s;
+}
+.subcontentbutton:hover {
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
     transition: 0.25s;
 }
@@ -210,6 +230,15 @@ ul > li {
     margin-top: 15px;
     margin-left: 15px;
     margin-right: 25px;
+}
+.descriptionContentSMImage {
+    width: 100px;
+    float: left;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 25px;
+    opacity: 0.6;
 }
 .contentGroup{
 	display: none;

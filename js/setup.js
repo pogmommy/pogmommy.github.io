@@ -5,11 +5,15 @@ $(function () {
 	$("#overlay").fadeOut(2000);
 });
 
+var testing = true
+
 var domain = ""
-if (window !== window.parent){
-	domain = "http://pogmom.me/";
+if (testing == true){
+	domain = "http://localhost:8888/";
+    console.log("localhost")
 } else {
 	domain = "http://pogmom.me/";
+    console.log("pogmom.me")
 }
 console.log(domain)
 
