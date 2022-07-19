@@ -5,7 +5,7 @@ $(function () {
 	$("#overlay").fadeOut(2000);
 });
 
-var testing = true
+var testing = false
 
 var domain = ""
 if (testing == true){
