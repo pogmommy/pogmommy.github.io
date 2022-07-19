@@ -232,7 +232,7 @@ ul > li {
     margin-right: 25px;
 }
 .descriptionContentSMImage {
-    width: 100px;
+    width: 20%;
     float: left;
     border-radius: 10px;
     margin-top: 15px;
@@ -271,6 +271,9 @@ ul > li {
     .descriptionContentImage {
 	    width: 100px;
     }
+    .descriptionContentSMImage {
+        width: 100px;
+    }
     .descriptionContentText {
         width: 75%;
     }
@@ -301,6 +304,9 @@ ul > li {
         padding: 10px 20px;
     }
     .descriptionContentImage {
+        width: 50px;
+    }
+    .descriptionContentSMImage {
         width: 50px;
     }
     .descriptionContentText{
