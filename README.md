@@ -1,2 +1,2 @@
 # Micah Gomez
-My personal website. Stll recieving constant updates as of 5/17/22.
+My personal website. Still recieving updates as of 8/8/22.
