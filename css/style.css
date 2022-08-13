@@ -316,7 +316,7 @@ ul > li {
         font-size: 14pt;
     }
     .footer-placeholder {
-        width: 70%;
+        width: 100%;
         margin: auto;
     }
     #mkartdata tr:nth-child(4n+2) > *:nth-child(1) {
