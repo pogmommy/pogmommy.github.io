@@ -249,7 +249,27 @@ ul > li {
     width: 100%;
 }
 
-
+/*modal setup*/
+#modaloverlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255,255,255,0.3); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+  justify-content:center;
+}
+.modal {
+    background-color: white;
+    color: black;
+	width: 100px;
+	height: 100px;
+}
 
 /*mobile setup*/
 /* If the screen size is 601px or more, set the font-size of <div> to 80px */

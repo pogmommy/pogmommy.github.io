@@ -31,6 +31,12 @@ async></script>
     <div class="headingcontent">
         <h1>Penelope Gomez</h1>
 		<h2>Sociology Student<br>iOS & Spreadsheet Developer<br>Professional Poster<br></h2>
+		<!--
+		<button id="modal" class="contentbutton">
+            <p>modal</p>
+            </button>
+			<br>
+		-->
     </div>
     <div>
         <div class="tilecontent">
@@ -178,7 +184,7 @@ async></script>
 						</p>
 					</li>
                 </ul>
-                <ul class="descriptionContent dcLeft">
+                <ul class="descriptionContent dcLeft" id="financialtracker">
                     <li> <a href="#"><img src="images/contentimages/excel/eternal.png" class="descriptionContentImage"></a>
                         <p class="descriptionContentText">Financial Tracker Eternal
 							<br><br>
@@ -188,7 +194,7 @@ async></script>
 						</p>
 					</li>
                 </ul>
-                <ul class="descriptionContent dcLeft">
+                <ul class="descriptionContent dcLeft" id="cookies">
                     <li> <a href="#"><img src="images/contentimages/excel/cookies.png" class="descriptionContentImage"></a>
                         <p class="descriptionContentText">Cookie Recipe
 							<br><br>
@@ -198,7 +204,7 @@ async></script>
 						</p>
 					</li>
                 </ul>
-                <ul class="descriptionContent dcLeft">
+                <ul class="descriptionContent dcLeft" id="truthtable">
                     <li> <a href="#"><img src="images/contentimages/excel/truthtable.png" class="descriptionContentImage"></a>
                         <p class="descriptionContentText">Truth Table
 							<br><br>
@@ -208,7 +214,7 @@ async></script>
 						</p>
 					</li>
                 </ul>
-                <ul class="descriptionContent dcLeft">
+                <ul class="descriptionContent dcLeft" id="gradetracker">
                     <li> <a href="#"><img src="images/contentimages/excel/gradetracker.png" class="descriptionContentImage"></a>
                         <p class="descriptionContentText">Grade Tracker
 							<br><br>
@@ -218,7 +224,7 @@ async></script>
 						</p>
 					</li>
                 </ul>
-                <ul class="descriptionContent dcLeft">
+                <ul class="descriptionContent dcLeft" id="rentsplitter">
                     <li> <a href="#"><img src="images/contentimages/excel/rmrentsplitter.png" class="descriptionContentImage"></a>
                         <p class="descriptionContentText">Rommate Financial Splitter
 							<br><br>
@@ -288,6 +294,11 @@ async></script>
     </div>
 </div>
 <div id="footer-placeholder" class="footer-placeholder"></div>
+<!--<div id="modaloverlay">
+		<div class="modal">
+			
+		</div>
+	</div>-->
 <script>
 
 
@@ -305,6 +316,10 @@ $(document).ready(function(){
 	});
 	$("#otherDesc").click(function(){
 		$("#otherDescContent").slideToggle();
+	});
+	$("#modal").click(function(){
+		console.log("foo");
+		$("#modaloverlay").fadeToggle();
 	});
 });
 </script>
