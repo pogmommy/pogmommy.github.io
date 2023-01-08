@@ -118,7 +118,7 @@
      }
     var pl = '';
      if(r.players.sample.length > 0 ){ pl = '<br>OP: '+r.players.sample[0].name;  }
-      $('#rest').html(r.description.replace(/§(.+?)/gi, "")+"<br><b>Players Online:</b> "+r.players.online+"/12"+pl);
+      $('#rest').html(r.description.replace(/§(.+?)/gi, "")+"<br><b>Players Online:</b> "+r.players.online+"/24"+pl);
      $('#favicon').attr('src', r.favicon);
         
     });
