@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Penelope Gwen</title>
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link id="pagestyle" rel="stylesheet" href="/css/style.css">
+<script src="./js/jquery.min.js"></script> 
+<script src="js/setup.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+
+<!-- Statcounter code for Personal Website
+http://mpg13.github.io on Dreamweaver --> 
+<script type="text/javascript">
+var sc_project=11679648; 
+var sc_invisible=1;
+var sc_security="fdd6bd3e"; 
+</script> 
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript>
+<div class="statcounter"><a title="Web Analytics" href="http://statcounter.com/" target="_blank"><img class="statcounter" src="//c.statcounter.com/11679648/0/fdd6bd3e/1/" alt="Web Analytics"></a></div>
+</noscript>
+<!-- End of Statcounter Code --> 
+
+<!--<div id="header-placeholder"></div>-->
+<div class="bodycontent">
+    <div class="headingcontent">
+        <h1>Pogmom Suite</h1>
+		<h2>A collection of public and private services I host.<br></h2>
+		<!--
+		<button id="modal" class="contentbutton">
+            <p>modal</p>
+            </button>
+			<br>
+		-->
+    </div>
+    <div>
+        <div class="tilecontent">
+            <button id="MediaBtn" class="contentbutton">
+            <p>Media Servers</p>
+            </button>
+            <div id="MediaContent" class="contentGroup">
+				<ul class="descriptionContent">
+                    <li>
+						<p class="descriptionContentText descriptionContentTextFullWidth">
+                            These services provide multimedia content.
+						</p>
+					</li>
+                </ul>
+				<ul class="descriptionContent dcLeft">
+                    <li>
+                        <p class="descriptionContentText">Media Server (Private)
+							<br><br>
+							Self-hosted Jellyfin media server for legal backups of Movies, TV Shows, and Music.
+							<br><br>
+                            <a href="#" onclick="pExt('https://pogmommy.stream')">Launch in Browser ➤</a>
+						</p>
+                    </li>
+                </ul>
+                <ul class="descriptionContent dcLeft">
+                    <li>
+                        <p class="descriptionContentText">Book Server (Private)
+                            <br><br>
+                            Self-hosted Komga book server for legal backups of Comics, Manga, Textbooks, and more.
+                            <br><br>
+                            <a href="#" onclick="pExt('https://bookspogmommy.stream')">Launch in Browser ➤</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <br>
+            <button id="SocialBtn" class="contentbutton">
+                <p>Social Servers</p>
+            </button>
+            <div id="SocialContent" class="contentGroup">
+                <ul class="descriptionContent">
+                    <li>
+						<p class="descriptionContentText descriptionContentTextFullWidth">
+                            These services host social media platforms and adjacent content.
+						</p>
+					</li>
+                </ul>
+                <ul class="descriptionContent dcLeft">
+                    <li>
+                        <p class="descriptionContentText">Mastodon Server (semi-private)
+                            <br><br>
+                            Self-hosted Mastodon server which is managed and moderated by me.
+                            <br><br>
+                            <a href="#" onclick="pExt('https://pogmommy.gay')">Launch in Browser ➤</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <br>
+            <button id="GamingBtn" class="contentbutton">
+                <p>Gaming Servers</p>
+            </button>
+            <div id="GamingContent" class="contentGroup">
+                <ul class="descriptionContent">
+                    <li>
+						<p class="descriptionContentText descriptionContentTextFullWidth">
+                            These services host online multiplayer game servers.
+						</p>
+					</li>
+                </ul>
+                <ul class="descriptionContent dcLeft">
+                    <li>
+                        <p class="descriptionContentText">Minecraft Server (public)
+                            <br><br>
+                            Self-hosted Minecraft server compatible with both the Bedrock and Java editions of the game.
+                            <br><br>
+                            <a href="#" onclick="pExt('https://mc.pogmom.me')">Visit landing page ➤</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <br>
+        </div>
+    </div>
+</div>
+<div id="footer-placeholder" class="footer-placeholder"></div>
+<!--<div id="modaloverlay">
+		<div class="modal">
+			
+		</div>
+	</div>-->
+<script>
+
+
+</script> 
+<script>
+$(document).ready(function(){
+	$("#MediaBtn").click(function(){
+		$("#MediaContent").slideToggle();
+	});
+	$("#SocialBtn").click(function(){
+		$("#SocialContent").slideToggle();
+	});
+	$("#GamingBtn").click(function(){
+		$("#GamingContent").slideToggle();
+	});
+});
+</script>
+</body>
+</html>
