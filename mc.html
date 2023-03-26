@@ -98,7 +98,7 @@
       box-shadow:0 4px 3px #0002;
       z-index:9
     }
-    #rest{
+    #restc, #rests{
       padding:30px 15px;
       line-height:30px;
       color:#000d42
@@ -108,18 +108,32 @@
 <script>
     
     //based on a pen by @robinselmer
-    var url = "https://api.minetools.eu/ping/mc.pogmom.me";
+    var survivalUrl = "https://api.minetools.eu/ping/mc.pogmom.me";
+    var creativeUrl = "https://api.minetools.eu/ping/mcc.pogmom.me";
      
-    $.getJSON(url, function(r) {
+    $.getJSON(survivalUrl, function(r) {
         //data is the JSON string
      if(r.error){
         $('#rest').html('Server Offline');
        return false;
      }
     var pl = '';
-     if(r.players.sample.length > 0 ){ pl = '<br>OP: '+r.players.sample[0].name;  }
-      $('#rest').html(r.description.replace(/§(.+?)/gi, "")+"<br><b>Players Online:</b> "+r.players.online+"/24"+pl);
-     $('#favicon').attr('src', r.favicon);
+     if(r.players.sample.length > 0 ){ pl = '<br>⛏ '+r.players.sample[0].name;  }
+     console.log(r.description);
+      $('#rests').html(r.description.replace(/\n/gi, "<br>").replace(/§(.+?)/gi, "")+"<br><b>Players Online:</b> "+r.players.online+"/"+r.players.max+pl);
+     $('#favicons').attr('src', r.favicon);
+    });
+
+    $.getJSON(creativeUrl, function(r) {
+        //data is the JSON string
+     if(r.error){
+        $('#rest').html('Server Offline');
+       return false;
+     }
+    var pl = '';
+     if(r.players.sample.length > 0 ){ pl = '<br>⛏ '+r.players.sample[0].name;  }
+     $('#restc').html(r.description.replace(/\n/gi, "<br>").replace(/§(.+?)/gi, "")+"<br><b>Players Online:</b> "+r.players.online+"/"+r.players.max+pl);
+     $('#faviconc').attr('src', r.favicon);
         
     });
     
@@ -150,19 +164,27 @@ async></script>
     
     
     
-    <div class="card"> <div class="icon"><img src="./images/contentimages/pogmommy.jpg" id="favicon"></div><div class="header">
+    <div class="card"> <div class="icon"><img src="./images/contentimages/pogmommy.jpg" id="favicons"></div><div class="header">
       <div class="image"> <img src="https://pogmom.me/images/contentimages/mcbanner.png" alt="" /> </div>
      
       <h2>mc.pogmom.me</h2>
       </div>
-      <div id="rest">Loading ...</div>
+      <div id="rests">Loading ...</div>
+    </div>
+    <br>
+    <div class="card"> <div class="icon"><img src="./images/contentimages/pogmommy.jpg" id="faviconc"></div><div class="header">
+      <div class="image"> <img src="https://pogmom.me/images/contentimages/mcbanner.png" alt="" /> </div>
+     
+      <h2>mcc.pogmom.me</h2>
+      </div>
+      <div id="restc">Loading ...</div>
     </div>
     <br><br>
     <button class="contentbutton" onclick="pExt('https://dis.pogmom.me')">
         <img src="images/sicons/discord.png" class="descriptionContentSMImage">
             <p class="descriptionContentText">Discord Server
                 <br><br>
-                The Democratic Penelope’s Republic of Kansas
+                The Democratic Penelope’s Republic of Kirkland
             </p>
             <br>
     </button>
