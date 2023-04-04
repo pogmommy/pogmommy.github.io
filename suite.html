@@ -29,8 +29,38 @@ async></script>
 <!--<div id="header-placeholder"></div>-->
 <div class="bodycontent">
     <div class="headingcontent">
-        <h1>Pogmom Suite</h1>
-		<h2>A collection of public and private services I host.<br></h2>
+        <div class="pageheader" style="overflow: hidden;">
+            <div style="float: left;">
+                <h1>Pogmom Suite</h1>
+                <h2>A collection of public and private services I host.<br></h2>
+            </div>
+            <!--<div class="tile-container">-->
+                <div class="tilebutton" style="float: right;">
+                    <a href="#" onclick="pExt('https://accounts.pogmom.me')">
+                        <div class="tilebuttoncontents">
+                            <img class="tileimage" src="/images/suiteicons/accounts.pogmom.me.png">
+                            <span class="p1"><br>Account</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="tilebutton" style="float: right;">
+                    <a href="#" onclick="pExt('https://cloud.pogmom.me/apps/forms/s/WkDWQ9wEFacTgPQCddrXqqgz')">
+                        <div class="tilebuttoncontents">
+                            <img class="tileimage" src="/images/suiteicons/registration.png">
+                            <span class="p1"><br>Register</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="tilebutton" style="float: right;">
+                    <a href="#" onclick="pExt('https://status.pogmom.me')">
+                        <div class="tilebuttoncontents">
+                            <img class="tileimage" src="/images/suiteicons/status.pogmom.me.png">
+                            <span class="p1"><br>Status</span>
+                        </div>
+                    </a>
+                </div>
+            <!--</div>-->
+        </div>
 		<!--
 		<button id="modal" class="contentbutton">
             <p>modal</p>
@@ -38,91 +68,101 @@ async></script>
 			<br>
 		-->
     </div>
-    <div>
-        <div class="tilecontent">
-            <button id="MediaBtn" class="contentbutton">
+
+    <div class="tilecontent">
+        <div>
+            <!--<button id="MediaBtn" class="contentbutton">
             <p>Media Servers</p>
-            </button>
-            <div id="MediaContent" class="contentGroup">
-				<ul class="descriptionContent">
-                    <li>
-						<p class="descriptionContentText descriptionContentTextFullWidth">
-                            These services provide multimedia content.
-						</p>
-					</li>
-                </ul>
-				<ul class="descriptionContent dcLeft">
-                    <li>
-                        <p class="descriptionContentText">Media Server (Private)
-							<br><br>
-							Self-hosted Jellyfin media server for legal backups of Movies, TV Shows, and Music.
-							<br><br>
-                            <a href="#" onclick="pExt('https://pogmommy.stream')">Launch in Browser ➤</a>
-						</p>
-                    </li>
-                </ul>
-                <ul class="descriptionContent dcLeft">
-                    <li>
-                        <p class="descriptionContentText">Book Server (Private)
-                            <br><br>
-                            Self-hosted Kavita book server for legal backups of Comics, Manga, Textbooks, and more.
-                            <br><br>
-                            <a href="#" onclick="pExt('https://books.pogmommy.stream')">Launch in Browser ➤</a>
-                        </p>
-                    </li>
-                </ul>
+            </button>-->
+            
+            <div class="tile-container" style="padding-top: 5%;padding-bottom: 5%;">
+                <div class="tilebutton">
+                    <img class="tileaccount" onclick="pSuiteInfo('books.pogmom.me','accounts.pogmom.me',false)" src="/images/suiteicons/accounts.pogmom.me.png">
+                    <img class="tileinfo" onclick="pSuiteInfo('books.pogmom.me','books.pogmom.me',true)" src="/images/suiteicons/info.png">
+                    <a href="#" onclick="pExt('https://books.pogmom.me')">
+                        <div class="tilebuttoncontents">
+                            <img class="tileimage" src="/images/suiteicons/books.pogmom.me.png">
+                            <span class="p1">Books</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="tilebutton">
+                    <img class="tileaccount" onclick="pSuiteInfo('comics.pogmom.me','accounts.pogmom.me',false)" src="/images/suiteicons/accounts.pogmom.me.png">
+                    <img class="tileinfo" onclick="pSuiteInfo('comics.pogmom.me','comics.pogmom.me',true)" src="/images/suiteicons/info.png">
+                    <a href="#" onclick="pExt('https://comics.pogmom.me')">
+                        <div class="tilebuttoncontents">
+                            <img class="tileimage" src="/images/suiteicons/comics.pogmom.me.png">
+                            <span class="p1">Comics</span>
+                        </div> 
+                    </a>
+                </div>
+                <div class="tilebutton">
+                    <img class="tileaccount" onclick="pSuiteInfo('watch.pogmom.me','accounts.pogmom.me',false)" src="/images/suiteicons/accounts.pogmom.me.png">
+                    <img class="tileinfo" onclick="pSuiteInfo('watch.pogmom.me','watch.pogmom.me',true)" src="/images/suiteicons/info.png">
+                    <a href="#" onclick="pExt('https://watch.pogmom.me')">
+                        <div class="tilebuttoncontents">
+                            <img class="tileimage" src="/images/suiteicons/watch.pogmom.me.png">
+                            <span class="p1">Jellyfin</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="tilebutton">
+                    <img class="tileinfo" onclick="pSuiteInfo('pogmommy.gay','pogmommy.gay',false)" src="/images/suiteicons/info.png">
+                    <a href="#" onclick="pExt('https://pogmommy.gay')">
+                        <div class="tilebuttoncontents">
+                            <img class="tileimage" src="/images/suiteicons/pogmommy.gay.png">
+                            <span class="p1">Mastodon</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="tilebutton">
+                    <img class="tileinfo" onclick="pSuiteInfo('mc.pogmom.me','mc.pogmom.me',false)" src="/images/suiteicons/info.png">
+                    <a href="#" onclick="pExt('https://mc.pogmom.me')">
+                        <div class="tilebuttoncontents">
+                            <img class="tileimage" src="/images/suiteicons/mc.pogmom.me.png">
+                            <span class="p1">Minecraft</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="tilebutton">
+                    <img class="tileaccount" onclick="pSuiteInfo('cloud.pogmom.me','accounts.pogmom.me',false)" src="/images/suiteicons/accounts.pogmom.me.png">
+                    <img class="tileinfo" onclick="pSuiteInfo('cloud.pogmom.me','cloud.pogmom.me',false)" src="/images/suiteicons/info.png">
+                    <a href="#" onclick="pExt('https://cloud.pogmom.me')">
+                        <div class="tilebuttoncontents">
+                            <img class="tileimage" src="/images/suiteicons/cloud.pogmom.me.png">
+                            <span class="p1">NextCloud</span>
+                        </div>
+                    </a>
+                </div>
             </div>
-            <br>
-            <button id="SocialBtn" class="contentbutton">
-                <p>Social Servers</p>
-            </button>
-            <div id="SocialContent" class="contentGroup">
+
+            <div id="suite-placeholder" class="suite-placeholder">
                 <ul class="descriptionContent">
                     <li>
-						<p class="descriptionContentText descriptionContentTextFullWidth">
-                            These services host social media platforms and adjacent content.
-						</p>
-					</li>
-                </ul>
-                <ul class="descriptionContent dcLeft">
-                    <li>
-                        <p class="descriptionContentText">Mastodon Server (semi-private)
-                            <br><br>
-                            Self-hosted Mastodon server which is managed and moderated by me.
-                            <br><br>
-                            <a href="#" onclick="pExt('https://pogmommy.gay')">Launch in Browser ➤</a>
+                        <p class="descriptionContentText descriptionContentTextFullWidth" id="serviceInformation">
                         </p>
                     </li>
                 </ul>
             </div>
-            <br>
-            <button id="GamingBtn" class="contentbutton">
-                <p>Gaming Servers</p>
-            </button>
-            <div id="GamingContent" class="contentGroup">
-                <ul class="descriptionContent">
-                    <li>
-						<p class="descriptionContentText descriptionContentTextFullWidth">
-                            These services host online multiplayer game servers.
-						</p>
-					</li>
-                </ul>
-                <ul class="descriptionContent dcLeft">
-                    <li>
-                        <p class="descriptionContentText">Minecraft Server (public)
-                            <br><br>
-                            Self-hosted Minecraft server compatible with both the Bedrock and Java editions of the game.
-                            <br><br>
-                            <a href="#" onclick="pExt('https://mc.pogmom.me')">Visit landing page ➤</a>
-                        </p>
-                    </li>
-                </ul>
-            </div>
-            <br>
         </div>
     </div>
+
+    <button id="socialLinks" class="contentbutton">
+        <p>Socials</p>
+        </button>
+        <br>
+        <div id="socialLinksContent" class="contentGroup">
+            <div id="footer-placeholder" class="footer-placeholder"></div>
+        </div>
+
+    <script>
+        $(document).ready(function(){
+            $("#socialLinks").click(function(){
+                $("#socialLinksContent").slideToggle();
+            });
+        });
+    </script>
 </div>
-<div id="footer-placeholder" class="footer-placeholder"></div>
 <!--<div id="modaloverlay">
 		<div class="modal">
 			
