@@ -1,0 +1,1 @@
+This is an under-maintenance multiplayer Minecraft server with several world and gameplay style options.

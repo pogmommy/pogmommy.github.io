@@ -1,0 +1,1 @@
+A NextCloud server used for productivity and social services, akin to the GSuite and Office 365 Online.

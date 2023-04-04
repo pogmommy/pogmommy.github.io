@@ -1,0 +1,1 @@
+A Jellyfin server that hosts multimedia content such as Movies, TV Shows, and Music, akin to Netflix, Hulu, Spotify, etc.

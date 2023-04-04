@@ -1,0 +1,1 @@
+A Calibre-Web server that hosts Comic Books, Graphic Novels, Manga, and other image-based reading materials, akin to Amazon ComiXology and Mavel Unlimited.

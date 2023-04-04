@@ -1,0 +1,1 @@
+This service supports Pogmom Login!<br>You can manage your accounts on the <a href="https://accounts.pogmom.me">accounts page</a>.
