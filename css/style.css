@@ -142,8 +142,8 @@ ul > li {
 .tilecontent {
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: auto;
     display: block;
-    margin-top: 30px;
     width: 100%;
 }
 .contentbutton {
@@ -199,6 +199,35 @@ ul > li {
     box-shadow: 5px 5px 10px black;
     transition: 0.25s;
 }
+/*.tilebutton {
+    text-align: center;
+	width: 5%;
+	opacity: 0.6;
+    float: left;
+	background-color: rgba(255, 255, 255, 0.35);
+	backdrop-filter: saturate(120%) blur(10px);
+    padding: 30px;
+    margin: 0px 10px;
+    border-radius: 12.632px;
+    margin-bottom: 5px;
+    transition: 1s;
+    position:relative;
+}*/
+.tileimage {
+    /*width: 50px;*/
+    width: 60%;
+    /*height: 100%;*/
+    display: block;
+    margin: auto;
+}
+.tilebuttoncontents {
+    margin-top: 25%;
+    margin-bottom: 25%;
+}
+.tilebutton:hover {
+    box-shadow: 5px 5px 10px black;
+    transition: 0.25s;
+}
 .descriptionContent {
     padding: 20px 0;
     border-radius: 8px;
@@ -245,10 +274,99 @@ ul > li {
 .contentGroup{
 	display: none;
 }
+.suite-placeholder {
+    display: none;
+}
 
 .footer-placeholder {
     text-align: center;
     width: 100%;
+    position: relative;
+    bottom: 0;
+}
+.tile-container {
+    /*text-align: center;*/
+    width: 100%;
+    overflow: visible;
+    display: inline-flex;
+}
+.tile-container > .tilebutton {
+    width: 20%;
+    margin: 5px 2%;
+    /*padding: 2%;*/
+    font-size: 0.8em;
+    /*width: 30px;
+	opacity: 0.6;
+	background-color: rgba(255, 255, 255, 0.35);
+	backdrop-filter: saturate(120%) blur(10px);
+    padding: 10px;
+    margin: 0px 10px;
+    border-radius: 12.632px;
+    margin-bottom: 5px;
+    transition: 1s;*/
+}
+.pageheader > .tilebutton > br {
+    line-height: 50%;
+}
+.pageheader > .tilebutton {
+    width: 4%;
+    padding: 1%;
+    font-size: 0.3em;
+    margin: 0px 1%;
+}
+
+.tilebutton {
+    text-align: center;
+	width: auto;
+	opacity: 0.6;
+	background-color: rgba(255, 255, 255, 0.35);
+    backdrop-filter: saturate(120%) blur(10px);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 12.632px;
+    margin-bottom: 0px;
+    transition: 1s;
+    position:relative;
+
+}
+.tilebutton > a {
+    text-decoration: none;
+}
+.p1 {
+    width: 100%;
+    /*font-size: 75%;*/
+    /*font-size: 0.5em;*/
+    padding-top: 10%;
+    display: block;
+}
+.tileinfo {
+    line-height: 12px;
+    /*width: 18px;*/
+    width: 17.5%;
+    font-size: 8pt;
+    font-family: tahoma;
+    margin-top: 1px;
+    margin-right: 2px;
+    position:absolute;
+    top:5px;
+    right:5px;
+    /*display: block;
+    float: right;
+    width: 25%;*/
+}
+.tileaccount {
+    line-height: 12px;
+    /*width: 18px;*/
+    width: 17.5%;
+    font-size: 8pt;
+    font-family: tahoma;
+    margin-top: 1px;
+    margin-right: 2px;
+    position:absolute;
+    top:5px;
+    left:5px;
+    /*display: block;
+    float: right;
+    width: 25%;*/
 }
 
 /*modal setup*/
@@ -310,6 +428,9 @@ ul > li {
 @media only screen and (max-width: 600px) {
     p {
         font-size: 12pt;
+    }
+    .p1 {
+        display: none;
     }
 	.citation {
 		font-size: 8pt;
