@@ -7,23 +7,22 @@
 */
 /*Meta stuff*/
 
-.messageoverlay {
-  position: fixed;
-  display: block;
-  width: 100%;
-  height: 100%;
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: block; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(255, 255, 255, 0.35);
-  backdrop-filter: saturate(100%) blur(3px);
+  background-color: rgba(0,0,0,0.9); /* Black background with opacity */
   pointer-events: none;
-  z-index: 2;
-  cursor: pointer;
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
 }
 
-.text{
+#text{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -40,21 +39,55 @@ html, body {
     scrollbar-width: none;
 	max-width: 100%;
     overflow-x: hidden;
-    min-height: 100vh;
+}
+@media (prefers-color-scheme: dark) {
+    body {
+        background-image: linear-gradient(#32CCFE, #C700D7);
+        /*background-color: rgba(70,70,73,1.00);*/
+        color: white;
+    }
+}
+@media (prefers-color-scheme: light) {
+    body {
+        background-image: linear-gradient(#32CCFE, #DA74E5);
+        /*background-image: linear-gradient(#8BB174, linen);*/
+        /*background-color: linen;*/
+        color: black;
+    }
 }
 .element::-webkit-scrollbar {
     display: none;
 }
 /*Standard Body CSS Starts*/
 body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    /*background-color: linen;*/
 }
 h1 {
+    color: #FFFFFF;
+    /*color: #728A31;*/
+    font-size: 36pt;
+	opacity: 0.7;
 }
 h3 {
+    color: #FFFFFF;
+    /*color: #689323;*/
+    font-size: 28pt;
+    text-align: center;
+    font-weight: 300;
 }
 a {
+    /*text-decoration: none;*/
+    /*color: #315F10;*/
+    color: #FFFFFF;
 }
 h2 {
+    color: #FFFFFF;
+    /*color: #315F10;*/
+    font-size: 18pt;
+    font-weight: 50;
+	opacity: 0.7;
 }
 
 h4 a {
@@ -62,15 +95,28 @@ h4 a {
 }
 
 h4 {
+    color: #FFFFFF;
+    /*color: #3F4C1B;*/
+    font-size: 14pt;
+    font-family: Courier New, Courier;
+    font-weight: 300;
+	opacity: 0.7;
 }
 p {
     color: #FFFFFF;
     /*color: #3F4C1B;*/
+    font-size: 18pt;
     text-align: left;
 	display: block;
 	opacity: 0.7;
 }
 ul > li {
+    display: inline-block;
+    /* You can also add some margins here to make it look prettier */
+    margin: 0px 25px;
+    zoom: 1;
+    vertical-align: middle;
+	width:-webkit-fill-available;
 }
 
 #mkartdata {
@@ -166,11 +212,27 @@ ul > li {
     position:relative;
 }*/
 .tileimage {
+    /*width: 50px;*/
+    width: 60%;
+    /*height: 100%;*/
+    display: block;
+    margin: auto;
 }
 .tilebuttoncontents {
+    margin-top: 25%;
+    margin-bottom: 25%;
+}
+.tilebutton:hover {
+    box-shadow: 5px 5px 10px black;
+    transition: 0.25s;
 }
 .descriptionContent {
     padding: 20px 0;
+    border-radius: 8px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+	backdrop-filter: saturate(120%) blur(10px);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
     transition: 1s;
 }
 .dcLeft{
@@ -222,9 +284,15 @@ ul > li {
 }
 .tile-container {
     /*text-align: center;*/
+    width: 100%;
+    overflow: visible;
+    display: inline-flex;
 }
 .tile-container > .tilebutton {
+    width: 20%;
+    margin: 5px 2%;
     /*padding: 2%;*/
+    font-size: 0.8em;
     /*width: 30px;
 	opacity: 0.6;
 	background-color: rgba(255, 255, 255, 0.35);
@@ -245,11 +313,28 @@ ul > li {
     margin: 0px 1%;
 }
 
+.tilebutton {
+    text-align: center;
+	width: auto;
+	opacity: 0.6;
+	background-color: rgba(255, 255, 255, 0.35);
+    backdrop-filter: saturate(120%) blur(10px);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 12.632px;
+    margin-bottom: 0px;
+    transition: 1s;
+    position:relative;
+
+}
 .tilebutton > a {
+    text-decoration: none;
 }
 .p1 {
+    width: 100%;
     /*font-size: 75%;*/
     /*font-size: 0.5em;*/
+    padding-top: 10%;
+    display: block;
 }
 .tileinfo {
     line-height: 12px;
@@ -267,8 +352,16 @@ ul > li {
     width: 25%;*/
 }
 .tileaccount {
+    line-height: 12px;
     /*width: 18px;*/
-    
+    width: 17.5%;
+    font-size: 8pt;
+    font-family: tahoma;
+    margin-top: 1px;
+    margin-right: 2px;
+    position:absolute;
+    top:5px;
+    left:5px;
     /*display: block;
     float: right;
     width: 25%;*/
@@ -311,6 +404,7 @@ ul > li {
 		font-weight: bold;
 	}
     .bodycontent {
+        padding: 25px 100px;
     }
     .descriptionContentImage {
 	    width: 100px;
@@ -348,6 +442,7 @@ ul > li {
         font-size: 10pt;
     }
     .bodycontent {
+        padding: 10px 20px;
     }
     .descriptionContentImage {
         width: 50px;

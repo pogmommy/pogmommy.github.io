@@ -1,189 +1,159 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<title>Pogmommy Suite</title>
-<link rel="shortcut icon" href="/images/favicon.ico">
-<link id="pagestyle" rel="stylesheet" href="/css/style.css">
-<script src="./js/jquery.min.js"></script> 
-<script src="js/setup.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <title>Pogmommy Suite</title>
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    <link id="pagestyle" rel="stylesheet" href="/css/layoutstyling.css">
+    <link id="pagestyle" rel="stylesheet" href="/css/grid.css">
+    <link id="pagestyle" rel="stylesheet" href="/css/ui.css">
+    <link id="pagestyle" rel="stylesheet" href="/css/text.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="js/setup.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
+
 <body>
 
-<!-- Statcounter code for Personal Website
-http://mpg13.github.io on Dreamweaver --> 
-<script type="text/javascript">
-var sc_project=11679648; 
-var sc_invisible=1;
-var sc_security="fdd6bd3e"; 
-</script> 
-<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js"
-async></script>
-<noscript>
-<div class="statcounter"><a title="Web Analytics" href="http://statcounter.com/" target="_blank"><img class="statcounter" src="//c.statcounter.com/11679648/0/fdd6bd3e/1/" alt="Web Analytics"></a></div>
-</noscript>
-<!-- End of Statcounter Code --> 
+    <script type="text/javascript">
+        var sc_project = 11679648;
+        var sc_invisible = 1;
+        var sc_security = "fdd6bd3e"; 
+    </script>
+    <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+    <noscript>
+        <div class="statcounter">
+            <a title="Web Analytics" href="http://statcounter.com/" target="_blank"><img class="statcounter"
+                    src="//c.statcounter.com/11679648/0/fdd6bd3e/1/" alt="Web Analytics"></a>
+        </div>
+    </noscript>
 
-<!--<div id="header-placeholder"></div>-->
-<div class="bodycontent">
-    <div class="headingcontent">
-        <div class="pageheader" style="overflow: hidden;">
-            <div style="float: left;">
-                <h1>Pogmom Suite</h1>
-                <h2>A collection of public and private services I host.<br></h2>
-            </div>
-            <!--<div class="tile-container">-->
-                <div class="tilebutton" style="float: right;">
-                    <a href="#" onclick="pExt('https://accounts.pogmom.me')">
-                        <div class="tilebuttoncontents">
-                            <img class="tileimage" src="/images/suiteicons/accounts.pogmom.me.png">
-                            <span class="p1"><br>Account</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="tilebutton" style="float: right;">
-                    <a href="#" onclick="pExt('https://cloud.pogmom.me/apps/forms/s/WkDWQ9wEFacTgPQCddrXqqgz')">
-                        <div class="tilebuttoncontents">
-                            <img class="tileimage" src="/images/suiteicons/registration.png">
-                            <span class="p1"><br>Register</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="tilebutton" style="float: right;">
+    <div class="header page">
+        <div class="title">
+            <h1>Pogmom Suite</h1>
+            <h2>A collection of public and private services I host.</h2>
+        </div>
+        <div class="grid">
+            <div>
+                <div class="frosted button">
                     <a href="#" onclick="pExt('https://status.pogmom.me')">
-                        <div class="tilebuttoncontents">
+                        <div class="content">
                             <img class="tileimage" src="/images/suiteicons/status.pogmom.me.png">
-                            <span class="p1"><br>Status</span>
+                            Status
                         </div>
                     </a>
                 </div>
-            <!--</div>-->
+                <div class="frosted button">
+                    <a href="#" onclick="pExt('https://cloud.pogmom.me/apps/forms/s/WkDWQ9wEFacTgPQCddrXqqgz')">
+                        <div class="content">
+                            <img class="tileimage" src="/images/suiteicons/registration.png">
+                            Register
+                        </div>
+                    </a>
+                </div>
+                <div class="frosted button">
+                    <a href="#" onclick="pExt('https://accounts.pogmom.me')">
+                        <div class="content">
+                            <img class="tileimage" src="/images/suiteicons/accounts.pogmom.me.png">
+                            Account
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
-		<!--
-		<button id="modal" class="contentbutton">
-            <p>modal</p>
-            </button>
-			<br>
-		-->
     </div>
 
-    <div class="tilecontent">
-        <div>
-            <!--<button id="MediaBtn" class="contentbutton">
-            <p>Media Servers</p>
-            </button>-->
-            
-            <div class="tile-container" style="padding-top: 5%;padding-bottom: 5%;">
-                <div class="tilebutton">
-                    <img class="tileaccount" onclick="pSuiteInfo('books.pogmom.me','accounts.pogmom.me',false)" src="/images/suiteicons/accounts.pogmom.me.png">
-                    <img class="tileinfo" onclick="pSuiteInfo('books.pogmom.me','books.pogmom.me',true)" src="/images/suiteicons/info.png">
+    <div class="body page">
+        <div class="grid">
+            <div>
+                <div class="frosted button">
+                    <img class="detail top left" onclick="pSuiteInfo('books.pogmom.me','accounts.pogmom.me',false)"
+                        src="/images/suiteicons/accounts.pogmom.me.png">
+                    <img class="detail top right" onclick="pSuiteInfo('books.pogmom.me','books.pogmom.me',true)"
+                        src="/images/suiteicons/info.png">
                     <a href="#" onclick="pExt('https://books.pogmom.me')">
-                        <div class="tilebuttoncontents">
+                        <div class="content">
                             <img class="tileimage" src="/images/suiteicons/books.pogmom.me.png">
-                            <span class="p1">Books</span>
+                            Books
                         </div>
                     </a>
                 </div>
-                <div class="tilebutton">
-                    <img class="tileaccount" onclick="pSuiteInfo('comics.pogmom.me','accounts.pogmom.me',false)" src="/images/suiteicons/accounts.pogmom.me.png">
-                    <img class="tileinfo" onclick="pSuiteInfo('comics.pogmom.me','comics.pogmom.me',true)" src="/images/suiteicons/info.png">
+                <div class="frosted button">
+                    <img class="detail top left" onclick="pSuiteInfo('comics.pogmom.me','accounts.pogmom.me',false)"
+                        src="/images/suiteicons/accounts.pogmom.me.png">
+                    <img class="detail top right" onclick="pSuiteInfo('comics.pogmom.me','comics.pogmom.me',true)"
+                        src="/images/suiteicons/info.png">
                     <a href="#" onclick="pExt('https://comics.pogmom.me')">
-                        <div class="tilebuttoncontents">
+                        <div class="content">
                             <img class="tileimage" src="/images/suiteicons/comics.pogmom.me.png">
-                            <span class="p1">Comics</span>
-                        </div> 
+                            Comics
+                        </div>
                     </a>
                 </div>
-                <div class="tilebutton">
-                    <img class="tileaccount" onclick="pSuiteInfo('watch.pogmom.me','accounts.pogmom.me',false)" src="/images/suiteicons/accounts.pogmom.me.png">
-                    <img class="tileinfo" onclick="pSuiteInfo('watch.pogmom.me','watch.pogmom.me',true)" src="/images/suiteicons/info.png">
+                <div class="frosted button">
+                    <img class="detail top left" onclick="pSuiteInfo('watch.pogmom.me','accounts.pogmom.me',false)"
+                        src="/images/suiteicons/accounts.pogmom.me.png">
+                    <img class="detail top right" onclick="pSuiteInfo('watch.pogmom.me','watch.pogmom.me',true)"
+                        src="/images/suiteicons/info.png">
                     <a href="#" onclick="pExt('https://watch.pogmom.me')">
-                        <div class="tilebuttoncontents">
+                        <div class="content">
                             <img class="tileimage" src="/images/suiteicons/watch.pogmom.me.png">
-                            <span class="p1">Jellyfin</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="tilebutton">
-                    <img class="tileinfo" onclick="pSuiteInfo('pogmommy.gay','pogmommy.gay',false)" src="/images/suiteicons/info.png">
-                    <a href="#" onclick="pExt('https://pogmommy.gay')">
-                        <div class="tilebuttoncontents">
-                            <img class="tileimage" src="/images/suiteicons/pogmommy.gay.png">
-                            <span class="p1">Mastodon</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="tilebutton">
-                    <img class="tileinfo" onclick="pSuiteInfo('mc.pogmom.me','mc.pogmom.me',false)" src="/images/suiteicons/info.png">
-                    <a href="#" onclick="pExt('https://mc.pogmom.me')">
-                        <div class="tilebuttoncontents">
-                            <img class="tileimage" src="/images/suiteicons/mc.pogmom.me.png">
-                            <span class="p1">Minecraft</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="tilebutton">
-                    <img class="tileaccount" onclick="pSuiteInfo('cloud.pogmom.me','accounts.pogmom.me',false)" src="/images/suiteicons/accounts.pogmom.me.png">
-                    <img class="tileinfo" onclick="pSuiteInfo('cloud.pogmom.me','cloud.pogmom.me',false)" src="/images/suiteicons/info.png">
-                    <a href="#" onclick="pExt('https://cloud.pogmom.me')">
-                        <div class="tilebuttoncontents">
-                            <img class="tileimage" src="/images/suiteicons/cloud.pogmom.me.png">
-                            <span class="p1">NextCloud</span>
+                            Jellyfin
                         </div>
                     </a>
                 </div>
             </div>
-
-            <div id="suite-placeholder" class="suite-placeholder">
-                <ul class="descriptionContent">
-                    <li>
-                        <p class="descriptionContentText descriptionContentTextFullWidth" id="serviceInformation">
-                        </p>
-                    </li>
-                </ul>
+            <div>
+                <div class="frosted button">
+                    <img class="detail top right" onclick="pSuiteInfo('pogmommy.gay','pogmommy.gay',false)"
+                        src="/images/suiteicons/info.png">
+                    <a href="#" onclick="pExt('https://pogmommy.gay')">
+                        <div class="content">
+                            <img class="tileimage" src="/images/suiteicons/pogmommy.gay.png">
+                            Mastodon
+                        </div>
+                    </a>
+                </div>
+                <div class="frosted button">
+                    <img class="detail top right" onclick="pSuiteInfo('mc.pogmom.me','mc.pogmom.me',false)"
+                        src="/images/suiteicons/info.png">
+                    <a href="#" onclick="pExt('https://mc.pogmom.me')">
+                        <div class="content">
+                            <img class="tileimage" src="/images/suiteicons/mc.pogmom.me.png">
+                            Minecraft
+                        </div>
+                    </a>
+                </div>
+                <div class="frosted button">
+                    <img class="detail top left" onclick="pSuiteInfo('cloud.pogmom.me','accounts.pogmom.me',false)"
+                        src="/images/suiteicons/accounts.pogmom.me.png">
+                    <img class="detail top right" onclick="pSuiteInfo('cloud.pogmom.me','cloud.pogmom.me',false)"
+                        src="/images/suiteicons/info.png">
+                    <a href="#" onclick="pExt('https://cloud.pogmom.me')">
+                        <div class="content">
+                            <img class="tileimage" src="/images/suiteicons/cloud.pogmom.me.png">
+                            NextCloud
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="suite-placeholder" class="suite-placeholder">
+            <div class="dense glass panel">
+                <p class="descriptionContentText descriptionContentTextFullWidth" id="serviceInformation"></p>
             </div>
         </div>
     </div>
 
-    <button id="socialLinks" class="contentbutton">
-        <p>Socials</p>
-        </button>
-        <br>
-        <div id="socialLinksContent" class="contentGroup">
-            <div id="footer-placeholder" class="footer-placeholder"></div>
-        </div>
-
+    <div class="footer page" id="footer-placeholder"></div>
+    
     <script>
-        $(document).ready(function(){
-            $("#socialLinks").click(function(){
-                $("#socialLinksContent").slideToggle();
-            });
+        $(document).ready(function () {
+            $("#suite-placeholder").hide();
         });
     </script>
-</div>
-<!--<div id="modaloverlay">
-		<div class="modal">
-			
-		</div>
-	</div>-->
-<script>
-
-
-</script> 
-<script>
-$(document).ready(function(){
-	$("#MediaBtn").click(function(){
-		$("#MediaContent").slideToggle();
-	});
-	$("#SocialBtn").click(function(){
-		$("#SocialContent").slideToggle();
-	});
-	$("#GamingBtn").click(function(){
-		$("#GamingContent").slideToggle();
-	});
-});
-</script>
 </body>
+
 </html>

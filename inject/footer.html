@@ -1,30 +1,100 @@
 <footer>
-	
-	<div id="overlay"> <!--remove style, enable pointed-events:none when finished -->
-		<div id="text">Trans Liberation Now<br></div>
-	</div>
-	
-		<a href="#" onclick="pExt('https://pogmom.me')"><img class="smbutton" src="/images/sicons/home.png"></a>
-		<a href="#" onclick="pExt('http://twt.pogmom.me')"><img class="smbutton" src="/images/sicons/twitter.png"></a>
-		<a href="#" onclick="pExt('http://yt.pogmom.me')"><img class="smbutton" src="/images/sicons/youtube.png"></a>
-        <a href="#" onclick="pExt('http://tt.pogmom.me')"><img class="smbutton" src="/images/sicons/tiktok.png"></a>
-        <a href="#" rel="me" onclick="pExt('https://mast.pogmom.me')"><img class="smbutton" src="/images/sicons/mastodon.png"></a>
-		<a href="#" onclick="pExt('http://dis.pogmom.me')"><img class="smbutton" src="/images/sicons/discord.png"></a>
-		<a href="#" onclick="pExt('https://git.pogmom.me')"><img class="smbutton" src="/images/sicons/github.png"></a>
-		<a href="#" onclick="pExt('mailto:penelope@pogmom.me')"><img class="smbutton" src="/images/sicons/email.png"></a>
-		<a href="#" onclick="pExt('sms:penelope@pogmom.me')"><img class="smbutton" src="/images/sicons/message.png"></a>
-        <!--<a href="#" onclick="pExt('https://insta.pogmom.me')"><img class="smbutton" src="/images/sicons/insta.png"></a>-->
-        <a href="#" onclick="pExt('https://merch.pogmom.me')"><img class="smbutton" src="/images/sicons/shop.png"></a>
 
-	<h4>Penelope Gwen (PogMommy)</h4>
-	<h4>Powered by Fully Automated Luxury Gay Space Communism</h4>
-	
-	<script>
-		function off() {
-			document.getElementById("overlay").style.display = "none";
-		}
-                $(function () {
-                    $("#overlay").fadeOut(2000); //was 2000
-                });
-	</script>
+    <div id="popupoverlay">
+        <div id="popuptext">
+            Trans
+            <br>
+            Liberation
+            <br>
+            Now
+        </div>
+    </div>
+
+    <div class="grid">
+        <div>
+            <div class="frosted button">
+                <a href="#" onclick="pExt('https://pogmom.me')">
+                    <div class="content">
+                        <img class="tileimage" src="/images/sicons/home.png">
+                    </div>
+                </a>
+            </div>
+            <div class="frosted button">
+                <a href="#" onclick="pExt('http://twt.pogmom.me')">
+                    <div class="content">
+                        <img class="tileimage" src="/images/sicons/twitter.png">
+                    </div>
+                </a>
+            </div>
+            <div class="frosted button">
+                <a href="#" onclick="pExt('http://yt.pogmom.me')">
+                    <div class="content">
+                        <img class="tileimage" src="/images/sicons/youtube.png">
+                    </div>
+                </a>
+            </div>
+            <div class="frosted button">
+                <a href="#" onclick="pExt('http://tt.pogmom.me')">
+                    <div class="content">
+                        <img class="tileimage" src="/images/sicons/tiktok.png">
+                    </div>
+                </a>
+            </div>
+            <div class="frosted button">
+                <a href="#" onclick="pExt('https://mast.pogmom.me')">
+                    <div class="content">
+                        <img class="tileimage" src="/images/sicons/mastodon.png">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div>
+            <div class="frosted button">
+                <a href="#" onclick="pExt('http://dis.pogmom.me')">
+                    <div class="content">
+                        <img class="tileimage" src="/images/sicons/discord.png">
+                    </div>
+                </a>
+            </div>
+            <div class="frosted button">
+                <a href="#" onclick="pExt('https://git.pogmom.me')">
+                    <div class="content">
+                        <img class="tileimage" src="/images/sicons/github.png">
+                    </div>
+                </a>
+            </div>
+            <div class="frosted button">
+                <a href="#" onclick="pExt('mailto:penelope@pogmom.me')">
+                    <div class="content">
+                        <img class="tileimage" src="/images/sicons/email.png">
+                    </div>
+                </a>
+            </div>
+            <div class="frosted button">
+                <a href="#" onclick="pExt('sms:penelope@pogmom.me')">
+                    <div class="content">
+                        <img class="tileimage" src="/images/sicons/message.png">
+                    </div>
+                </a>
+            </div>
+            <div class="frosted button">
+                <a href="#" onclick="pExt('https://merch.pogmom.me')">
+                    <div class="content">
+                        <img class="tileimage" src="/images/sicons/shop.png">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <h2>Penelope Gwen (pogmommy)</h2>
+    <h3>Powered by Fully Automated<br>Luxury Gay Space Communism</h3>
+
+    <script>
+        function off() {
+            document.getElementsById("popupoverlay").style.display = "none";
+        }
+        $(function () {
+            $("#popupoverlay").fadeOut(1000);
+        });
+    </script>
 </footer>

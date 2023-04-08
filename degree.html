@@ -1,138 +1,182 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<title>Penelope Gwen | Degree Retrieval</title>
-<link rel="shortcut icon" href="images/favicon.ico">
-<link id="pagestyle" rel="stylesheet" href="/css/style.css">
-<script src="./js/jquery.min.js"></script> 
-<script src="js/setup.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <title>PenU Grad Portal</title>
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    <link id="pagestyle" rel="stylesheet" href="/css/layoutstyling.css">
+    <link id="pagestyle" rel="stylesheet" href="/css/grid.css">
+    <link id="pagestyle" rel="stylesheet" href="/css/ui.css">
+    <link id="pagestyle" rel="stylesheet" href="/css/text.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="js/setup.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
+
 <body>
 
-<!-- Statcounter code for Personal Website
-http://mpg13.github.io on Dreamweaver --> 
-<script type="text/javascript">
-var sc_project=11679648; 
-var sc_invisible=1; 
-var sc_security="fdd6bd3e"; 
-</script> 
-<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js"
-async></script>
-<noscript>
-<div class="statcounter"><a title="Web Analytics" href="http://statcounter.com/" target="_blank"><img class="statcounter" src="//c.statcounter.com/11679648/0/fdd6bd3e/1/" alt="Web Analytics"></a></div>
-</noscript>
-<!-- End of Statcounter Code --> 
+    <script type="text/javascript">
+        var sc_project = 11679648;
+        var sc_invisible = 1;
+        var sc_security = "fdd6bd3e"; 
+    </script>
+    <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+    <noscript>
+        <div class="statcounter">
+            <a title="Web Analytics" href="http://statcounter.com/" target="_blank">
+                <img class="statcounter" src="//c.statcounter.com/11679648/0/fdd6bd3e/1/" alt="Web Analytics">
+            </a>
+        </div>
+    </noscript>
 
-<!--<div id="header-placeholder"></div>-->
-<div class="bodycontent">
-    <div class="headingcontent">
-        <h1>Penelope Gwen University Degree Retrieval</h1>
-        <h2>Congratulations for graduating from PenU!</h2>
-		<h4>Press below to access your diploma.<br>
-            Feel free to print copies of your diploma at no cost.<br>It looks great on a resume!</h4>
-    </div>
-    <div>
-        <div class="tilecontent">
-			<iframe src="printdegree.html" style="display:none;" name="frame"></iframe>
-			<button onclick="frames['frame'].print()" class="contentbutton">
-            <p>Print Certificate of Graduation</p>
-            </button>
-			<br>
-			<button onClick="faqDesc()" id="faqDesc" class="contentbutton">
-            <p>FAQ</p>
-            </button>
-            <div id="faqDescContent" class="contentGroup">
-				<ul class="descriptionContent">
-                    <li>
-                        <p class="descriptionContentText descriptionContentTextFullWidth">Is Penelope Gwen University an accredited university?
-							<br><br>
-							PenU is just as accredited a university as Prager University. However unlike Prager University, PenU is not a source of misinformation.
-						</p>
-                    </li>
-                </ul>
-				<ul class="descriptionContent">
-                    <li>
-                        <p class="descriptionContentText descriptionContentTextFullWidth">How much is tuition to PenU?
-							<br><br>
-							$0.00 USD per semester, with a 10% rebate available if enrolled for a full year. Further contributions can be made <a href="#" onclick="mExt('https://venmo.com/u/pogmommy')">here</a>.
-						</p>
-                    </li>
-                </ul>
-				<ul class="descriptionContent">
-                    <li>
-                        <p class="descriptionContentText descriptionContentTextFullWidth">Where is the PenU campus located?
-							<br><br>
-							Penelope Gwen University is located at 2 15th St NW, Washington, DC 20024.
-						</p>
-                    </li>
-                </ul>
-				<ul class="descriptionContent">
-                    <li>
-                        <p class="descriptionContentText descriptionContentTextFullWidth">What should I do if I have COVID-19 symptoms?
-							<br><br>
-							Wear a mask, seek medical care, and avoid any public meetings, including but not limited to on-campus courses at Penelope Gwen University.
-						</p>
-                    </li>
-                </ul>
-				<ul class="descriptionContent">
-                    <li>
-                        <p class="descriptionContentText descriptionContentTextFullWidth">What are the steps to acceptance into PenU?
-							<br><br>
-							Take a shower, have a snack, and press the button above.
-						</p>
-                    </li>
-                </ul>
-				<ul class="descriptionContent">
-                    <li>
-                        <p class="descriptionContentText descriptionContentTextFullWidth">Does PenU accept international students?
-							<br><br>
-							No, in the sense that Penelope Gwen University does not recognize state or nation borders. Anyone is welcome in Penelope Gwen University in regard to otherwise percieved geographical barriers.
-						</p>
-                    </li>
-                </ul>
-				<ul class="descriptionContent">
-                    <li>
-                        <p class="descriptionContentText descriptionContentTextFullWidth">Are PenU degree certificates subject to revokation?
-							<br><br>
-							Yes. Penelope Gwen University graduation certifications are automatically null and void if the recipient expresses views contrary to those outlined in <a href="#" onclick="mExt('http://twt.pogmom.me')">the Penelope Gwen University code of ethics</a>.
-						</p>
-                    </li>
-                </ul>
-            </div>
-            <br>
+    <div class="header page">
+        <div class="title">
+            <h1>
+                PenU Portal
+            </h1>
+            <h2>
+                Congratulations for graduating from Penelope Gwen University!
+            </h2>
         </div>
     </div>
-</div>
-<div id="footer-placeholder" class="footer-placeholder"></div>
-<script>
 
-function printExternal(url) {
-    var printWindow = window.open( url, 'Print', 'left=200, top=200, width=950, height=500, toolbar=0, resizable=0');
+    <div class="body page">
 
-    printWindow.addEventListener('load', function() {
-        if (Boolean(printWindow.chrome)) {
-            printWindow.print();
-            setTimeout(function(){
-                printWindow.close();
-            }, 500);
-        } else {
-            printWindow.print();
-            printWindow.close();
+        <iframe src="printdegree.html" style="display:none;" name="degree"></iframe>
+        <button onclick="frames['frame'].print()" class="dense frosted button full panel">
+            <p>
+                Print Degree
+            </p>
+        </button>
+
+        <button id="faqExpand" class="dense frosted button full panel">
+            <p>
+                FAQ
+            </p>
+        </button>
+        <div id="faqDropdown" class="group">
+            <div class="dense glass sub panel">
+                <h2>
+                    Why does my degree appear blank?
+                </h2>
+                <div class="info mobileV">
+                    <p>
+                        Due to the high volume of traffic from gradautes attempting to access their degree, the PenU
+                        Student Portal might display a blank degree. If you experience this issue, please try
+                        downloading your degree again, or try in another browser.
+                    </p>
+                </div>
+            </div>
+            <div class="dense glass sub panel">
+                <h2>
+                    Is Penelope Gwen University an accredited university?
+                </h2>
+                <div class="info mobileV">
+                    <p>
+                        PenU is just as accredited a university as Prager University. However unlike Prager University,
+                        PenU is not a source of misinformation.
+                    </p>
+                </div>
+            </div>
+            <div class="dense glass sub panel">
+                <h2>
+                    How much is tuition to PenU?
+                </h2>
+                <div class="info mobileV">
+                    <p>
+                        $0.00 USD per semester, with a 10% rebate available if enrolled for a full year. Further
+                        contributions can be made <a href="#" onclick="mExt('https://venmo.com/u/pogmommy')">here</a>.
+                    </p>
+                </div>
+            </div>
+            <div class="dense glass sub panel">
+                <h2>
+                    Where is the PenU campus located?
+                </h2>
+                <div class="info mobileV">
+                    <p>
+                        Penelope Gwen University is located at 2 15th St NW, Washington, DC 20024. Feel free to visit
+                        and ask for a tour!
+                    </p>
+                </div>
+            </div>
+            <div class="dense glass sub panel">
+                <h2>
+                    What should I do if I have COVID-19 symptoms?
+                </h2>
+                <div class="info mobileV">
+                    <p>
+                        Wear a mask, seek medical care, and avoid any public meetings, including but not limited to
+                        on-campus courses at Penelope Gwen University.
+                    </p>
+                </div>
+            </div>
+            <div class="dense glass sub panel">
+                <h2>
+                    What are the steps to acceptance into PenU?
+                </h2>
+                <div class="info mobileV">
+                    <p>
+                        Take a shower, have a snack, and press the button above.
+                    </p>
+                </div>
+            </div>
+            <div class="dense glass sub panel">
+                <h2>
+                    Does PenU accept international students?
+                </h2>
+                <div class="info mobileV">
+                    <p>
+                        No, in the sense that Penelope Gwen University does not recognize state or nation borders.
+                        Anyone is welcome in Penelope Gwen University without regard to geographical barriers as
+                        percieved by any other institution.
+                    </p>
+                </div>
+            </div>
+            <div class="dense glass sub panel">
+                <h2>
+                    Are PenU degree certificates subject to revokation?
+                </h2>
+                <div class="info mobileV">
+                    <p>
+                        Yes. Penelope Gwen University graduation certifications are automatically null and void if the
+                        recipient expresses views contrary to those outlined in <a href="#"
+                            onclick="mExt('http://twt.pogmom.me')">the Penelope Gwen University code of ethics</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer page" id="footer-placeholder"></div>
+
+    <script>
+        $(document).ready(function () {
+            $("#faqExpand").click(function () {
+                $("#faqDropdown").slideToggle();
+            });
+        });
+
+        function printExternal(url) {
+            var printWindow = window.open(url, 'Print', 'left=200, top=200, width=950, height=500, toolbar=0, resizable=0');
+
+            printWindow.addEventListener('load', function () {
+                if (Boolean(printWindow.chrome)) {
+                    printWindow.print();
+                    setTimeout(function () {
+                        printWindow.close();
+                    }, 500);
+                } else {
+                    printWindow.print();
+                    printWindow.close();
+                }
+            }, true);
         }
-    }, true);
-}
+    </script>
 
-</script> 
-<script>
-$(document).ready(function(){
-	
-	$("#faqDesc").click(function(){
-		$("#faqDescContent").slideToggle();
-	});
-});
-</script>
 </body>
+
 </html>

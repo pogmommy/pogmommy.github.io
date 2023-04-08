@@ -1,0 +1,78 @@
+/*HEADER*/
+
+.header .grid .content {
+    margin: 10px;
+    min-width: 50px;
+    max-width: 80px;
+}
+
+/*BODY*/
+
+.body .grid .content {
+    margin: 15px;
+    min-width: 50px;
+    max-width: 120px;
+}
+.body .grid .content img {
+    margin: 10px 0px;
+}
+
+/*FOOTER*/
+
+.footer .grid .content {
+    margin: 10px;
+    min-width: 10px;
+    max-width: 30px;
+}
+.footer .grid .content img {
+    margin: auto;
+    width: 100%;
+}
+
+/*UNIVERSAL*/
+
+.grid {
+    width: 100%;
+    flex-wrap: wrap;
+}
+.grid > * {
+    justify-content: space-around;
+    flex-grow: 1;
+}
+.grid, .grid > * {
+    display: inline-flex;
+}
+.grid > * > * {
+    text-align: center;
+    position:relative;
+    margin: 10px 10px;
+}
+.grid .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 8pt;
+	opacity: 1;
+}
+.grid .content img {
+    margin-bottom: 10px;
+    width: 75%;
+}
+.grid .detail {
+    width: 17.5%;
+    position:absolute;
+    z-index: 1;
+}
+.top {
+    top:7px;
+}
+.bottom {
+    bottom:7px;
+}
+.left {
+    left:7px;
+}
+.right {
+    right:7px;
+}
