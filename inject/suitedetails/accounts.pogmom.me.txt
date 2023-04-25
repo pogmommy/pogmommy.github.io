@@ -1,1 +1,3 @@
-This service supports Pogmom Login!<br>You can manage your accounts on the <a href="https://accounts.pogmom.me">accounts page</a>.
+<div class="dense glass panel">
+    <p class="descriptionContentText descriptionContentTextFullWidth" id="serviceInformation">This service supports Pogmom Login!<br>You can manage your accounts on the <a href="https://accounts.pogmom.me">accounts page</a>.</p>
+</div>

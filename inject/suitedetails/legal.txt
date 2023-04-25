@@ -1,1 +1,3 @@
-This is a private media server containing media which has been legally acquired.
+<div class="dense glass panel">
+    <p class="descriptionContentText descriptionContentTextFullWidth" id="serviceInformation">This is a private media server containing media which has been legally acquired.</p>
+</div>

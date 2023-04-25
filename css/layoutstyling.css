@@ -21,7 +21,6 @@ body {
 .header, .body, .footer {
     width: auto;
     padding: 5vh 0vw;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.25);
 }
 
 /* PAGE */
@@ -51,6 +50,7 @@ body {
     align-content: center;
     justify-content: space-around;
     flex-wrap: wrap;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.25);
 }
 .header > * {
     margin-top: auto;
@@ -82,4 +82,10 @@ body {
 }
 .group {
     display: none;
+}
+
+/* FOOTER */
+
+.footer {
+    border-top: 2px solid rgba(255, 255, 255, 0.25);
 }

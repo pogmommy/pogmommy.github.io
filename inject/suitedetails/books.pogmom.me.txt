@@ -1,1 +1,3 @@
-A Calibre-Web server that hosts Text Books, Novels, and other text-based reading materials, akin to Amazon Kindle and Apple Books.
+<div class="dense glass panel">
+    <p class="descriptionContentText descriptionContentTextFullWidth" id="serviceInformation">A Calibre-Web server that hosts Text Books, Novels, and other text-based reading materials, akin to Amazon Kindle and Apple Books.</p>
+</div>

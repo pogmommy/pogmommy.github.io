@@ -1,0 +1,134 @@
+<div class="dense frosted panel centered">
+    <p class="descriptionContentText descriptionContentTextFullWidth" id="serviceInformation">Recommended Clients<br>If you are experiencing any issues with the default client linked above, please try one of the following clients.<br>If prompted for a server address during setup, use "https://watch.pogmom.me"</p>
+</div>
+<br>
+<div class="dense glass panel centered">
+    <p class="descriptionContentText descriptionContentTextFullWidth" id="serviceInformation">Desktop</p>
+</div>
+<br>
+<div class="dense glass sub panel">
+    <h2>
+        Jellyfin Vue<br>(Video + Music)
+    </h2>
+    <div class="info mobileV">
+        <img class="transparent" src="inject/suitedetails/img/jellyfin/vue.png">
+        <p>
+            A modern web client for Jellyfin based on Vue.
+        </p>
+        <a href="#" onclick="pExt('https://media.pogmom.me/server/login')">
+            <div class="sleek glass panel button">
+                <p>Launch</p>
+            </div>
+        </a>
+    </div>
+</div>
+<br>
+<div class="dense glass sub panel">
+    <h2>
+        Sonixd<br>(Music)
+    </h2>
+    <div class="info mobileV">
+        <img class="transparent" src="inject/suitedetails/img/jellyfin/sonixd.png">
+        <p>
+            Cross-platform desktop client for streaming music.
+        </p>
+        <a href="#" onclick="pExt('https://github.com/jeffvli/sonixd/releases')">
+            <div class="sleek glass panel button">
+                <p>Download</p>
+            </div>
+        </a>
+    </div>
+</div>
+<br>
+<div class="dense glass sub panel">
+    <h2>
+        Jellyfin Media Player<br>(Video + Music)
+    </h2>
+    <div class="info mobileV">
+        <img class="transparent" src="inject/suitedetails/img/jellyfin/jellyfin.png">
+        <p>
+            Default web frontend for Jellyfin, optimized for desktop use.
+        </p>
+        <a href="#" onclick="pExt('https://github.com/jellyfin/jellyfin-media-player/releases')">
+            <div class="sleek glass panel button">
+                <p>Download</p>
+            </div>
+        </a>
+    </div>
+</div>
+<br>
+<div class="dense glass panel centered">
+    <p class="descriptionContentText descriptionContentTextFullWidth" id="serviceInformation">iOS</p>
+</div>
+<br>
+<div class="dense glass sub panel">
+    <h2>
+        Swiftfin<br>(Video + Music)
+    </h2>
+    <div class="info mobileV">
+        <img src="inject/suitedetails/img/jellyfin/swiftfin.png">
+        <p>
+            Native iOS Client for Jellyfin written in Swift.
+        </p>
+        <a href="#" onclick="pExt('https://apps.apple.com/ca/app/swiftfin/id1604098728')">
+            <div class="sleek glass panel button">
+                <p>Download</p>
+            </div>
+        </a>
+    </div>
+</div>
+<br>
+<div class="dense glass sub panel">
+    <h2>
+        Finamp<br>(Music)
+    </h2>
+    <div class="info mobileV">
+        <img src="inject/suitedetails/img/jellyfin/finamp.png">
+        <p>
+            Third-party Jellyfin music client with the ability to download music for offline playback.
+        </p>
+        <a href="#" onclick="pExt('https://github.com/jmshrv/finamp/blob/main/README.md')">
+            <div class="sleek glass panel button">
+                <p>Download</p>
+            </div>
+        </a>
+    </div>
+</div>
+<br>
+<div class="dense glass panel centered">
+    <p class="descriptionContentText descriptionContentTextFullWidth" id="serviceInformation">Android</p>
+</div>
+<br>
+<div class="dense glass sub panel">
+    <h2>
+        Findroid<br>(Video + Music)
+    </h2>
+    <div class="info mobileV">
+        <img src="inject/suitedetails/img/jellyfin/findroid.png">
+        <p>
+            Native Android Client for Jellyfin written in Kotlin.
+        </p>
+        <a href="#" onclick="pExt('https://github.com/jarnedemeulemeester/findroid/blob/main/README.md')">
+            <div class="sleek glass panel button">
+                <p>Download</p>
+            </div>
+        </a>
+    </div>
+</div>
+<br>
+<div class="dense glass sub panel">
+    <h2>
+        Finamp<br>(Music)
+    </h2>
+    <div class="info mobileV">
+        <img src="inject/suitedetails/img/jellyfin/finamp.png">
+        <p>
+            Third-party Jellyfin music client with the ability to download music for offline playback.
+        </p>
+        <a href="#" onclick="pExt('https://github.com/jmshrv/finamp/blob/main/README.md')">
+            <div class="sleek glass panel button">
+                <p>Download</p>
+            </div>
+        </a>
+    </div>
+</div>

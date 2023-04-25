@@ -1,1 +1,3 @@
-This is an under-maintenance multiplayer Minecraft server with several world and gameplay style options.
+<div class="dense glass panel">
+    <p class="descriptionContentText descriptionContentTextFullWidth" id="serviceInformation">This is an under-maintenance multiplayer Minecraft server with several world and gameplay style options.</p>
+</div>

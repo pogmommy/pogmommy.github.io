@@ -1,1 +1,3 @@
-A NextCloud server used for productivity and social services, akin to the GSuite and Office 365 Online.
+<div class="dense glass panel">
+    <p class="descriptionContentText descriptionContentTextFullWidth" id="serviceInformation">A NextCloud server used for productivity and social services, akin to the GSuite and Office 365 Online.</p>
+</div>

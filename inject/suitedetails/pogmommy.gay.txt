@@ -1,1 +1,3 @@
-A Mastodon server with semi-open enrollment that is relayed with <a href="https://relay.gay">relay.gay</a>, akin to Twitter and Tumblr.
+<div class="dense glass panel">
+    <p class="descriptionContentText descriptionContentTextFullWidth" id="serviceInformation">A Mastodon server with semi-open enrollment that is relayed with <a href="https://relay.gay">relay.gay</a>, akin to Twitter and Tumblr.</p>
+</div>
