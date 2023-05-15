@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Pogmommy | 404</title>
+    <title>Pogmommy | Minecraft</title>
     <link rel="shortcut icon" href="images/favicon.ico">
     <link id="pagestyle" rel="stylesheet" href="/css/layoutstyling.css">
     <link id="pagestyle" rel="stylesheet" href="/css/grid.css">
@@ -32,7 +32,7 @@
     
         //based on a pen by @robinselmer
         var survivalUrl = "https://api.minetools.eu/ping/mc.pogmom.me";
-        /*var creativeUrl = "https://api.minetools.eu/ping/mcc.pogmom.me";*/ //SECOND SERVER
+        var creativeUrl = "https://api.minetools.eu/ping/modded.pogmom.me"; //SECOND SERVER
          
         $.getJSON(survivalUrl, function(r) {
             //data is the JSON string
@@ -46,7 +46,7 @@
           $('#rests').html(r.description.replace(/\n/gi, "<br>").replace(/§(.+?)/gi, "")+"<br><b>Players Online:</b> "+r.players.online+"/"+r.players.max+pl);
          $('#favicons').attr('src', r.favicon);
         });
-    /*
+    
         $.getJSON(creativeUrl, function(r) {
             //data is the JSON string
          if(r.error){
@@ -58,7 +58,7 @@
          $('#restc').html(r.description.replace(/\n/gi, "<br>").replace(/§(.+?)/gi, "")+"<br><b>Players Online:</b> "+r.players.online+"/"+r.players.max+pl);
          $('#faviconc').attr('src', r.favicon);
         });
-    */
+    
         
     </script>
 
@@ -70,24 +70,30 @@
     </div>
 
     <div class="body page">
-        <div class="mccard glass panel">
-            <div class="mcicon"><img src="./images/contentimages/pogmommy.jpg" id="favicons"></div>
-            <div class="mcheader">
-                <div class="mcimage"> <img src="https://pogmom.me/images/contentimages/mcbanner.png" alt="" /> </div>
+        <div class="grid">
+            <div>
+                <div class="mccard glass panel">
+                    <div class="mcicon"><img src="./images/contentimages/pogmommy.jpg" id="favicons"></div>
+                    <div class="mcheader">
+                        <div class="mcimage"> <img src="https://pogmom.me/images/contentimages/mcbanner.png" alt="" /> </div>
 
-                <h2>mc.pogmom.me</h2>
+                        <h2>mc.pogmom.me</h2>
+                    </div>
+                    <p id="rests">Loading ...</p>
+                </div>
             </div>
-            <p id="rests">Loading ...</p>
+            <div>
+                <div class="mccard glass panel">
+                    <div class="mcicon"><img src="./images/contentimages/pogmommy.jpg" id="faviconc"></div>
+                    <div class="mcheader">
+                        <div class="mcimage"> <img src="https://pogmom.me/images/contentimages/mcbanner.png" alt="" /> </div>
+
+                        <h2>modded.pogmom.me</h2>
+                    </div>
+                    <p id="restc">Loading ...</p>
+                </div>
+            </div>
         </div>
-        <!--<div class="mccard glass panel">
-            <div class="mcicon"><img src="./images/contentimages/pogmommy.jpg" id="faviconc"></div>
-            <div class="mcheader">
-                <div class="mcimage"> <img src="https://pogmom.me/images/contentimages/mcbanner.png" alt="" /> </div>
-
-                <h2>mcc.pogmom.me</h2>
-            </div>
-            <p id="restc">Loading ...</p>
-        </div>-->
         <button onclick="pExt('https://dis.pogmom.me')" class="dense frosted button full panel">
             <p>
                 The Democratic Penelope’s Republic of Kirkland
