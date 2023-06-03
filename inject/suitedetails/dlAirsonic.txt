@@ -1,5 +1,5 @@
 <div class="dense frosted panel centerobj centered">
-    <p class="descriptionContentText descriptionContentTextFullWidth" id="serviceInformation">Recommended Clients<br>If you are experiencing any issues with the default client linked above, please try one of the following clients.<br>If prompted for a server address during setup, use "https://listen.pogmom.me"</p>
+    <p class="descriptionContentText descriptionContentTextFullWidth" id="serviceInformation">If you are experiencing any issues with the default client linked above, please try one of the following clients.<br>If prompted for a server address during setup, use "https://listen.pogmom.me".<br>When loggin in, be sure to enable legacy/plaintext authentication!</p>
 </div>
 <br>
 <div class="dense glass panel centerobj centered">
@@ -8,10 +8,27 @@
 <br>
 <div class="dense glass sub panel centerobj">
     <h2>
+        Airsonic-Refix
+    </h2>
+    <div class="info mobileV">
+        <img src="inject/suitedetails/img/airsonic/airsonic.png">
+        <p>
+            A modern web client for Subsonic music servers based on Vue.
+        </p>
+        <a href="#" onclick="pExt('https://music.pogmom.me')">
+            <div class="sleek glass panel centerobj button">
+                <p>Launch</p>
+            </div>
+        </a>
+    </div>
+</div>
+<br>
+<div class="dense glass sub panel centerobj">
+    <h2>
         Sonixd
     </h2>
     <div class="info mobileV">
-        <img class="transparent" src="inject/suitedetails/img/jellyfin/sonixd.png">
+        <img class="transparent" src="inject/suitedetails/img/airsonic/sonixd.png">
         <p>
             Cross-platform desktop client for streaming music.
         </p>
@@ -23,20 +40,20 @@
     </div>
 </div>
 <br>
-<!--<div class="dense glass panel centerobj centered">
+<div class="dense glass panel centerobj centered">
     <p class="descriptionContentText descriptionContentTextFullWidth" id="serviceInformation">iOS</p>
 </div>
 <br>
 <div class="dense glass sub panel centerobj">
     <h2>
-        Swiftfin<br>(Video + Music)
+        SubStreamer
     </h2>
     <div class="info mobileV">
-        <img src="inject/suitedetails/img/jellyfin/swiftfin.png">
+        <img src="inject/suitedetails/img/airsonic/substreamer.webp">
         <p>
-            Native iOS Client for Jellyfin written in Swift.
+            Mobile client for Subsonic media servers.
         </p>
-        <a href="#" onclick="pExt('https://apps.apple.com/ca/app/swiftfin/id1604098728')">
+        <a href="#" onclick="pExt('https://apps.apple.com/us/app/substreamer/id1012991665')">
             <div class="sleek glass panel centerobj button">
                 <p>Download</p>
             </div>
@@ -46,14 +63,14 @@
 <br>
 <div class="dense glass sub panel centerobj">
     <h2>
-        Finamp<br>(Music)
+        play:Sub
     </h2>
     <div class="info mobileV">
-        <img src="inject/suitedetails/img/jellyfin/finamp.png">
+        <img src="inject/suitedetails/img/airsonic/playsub.webp">
         <p>
-            Third-party Jellyfin music client with the ability to download music for offline playback.
+            Advanced iOS Client for Subsonic media servers.
         </p>
-        <a href="#" onclick="pExt('https://github.com/jmshrv/finamp/blob/main/README.md')">
+        <a href="#" onclick="pExt('https://apps.apple.com/us/app/substreamer/id1012991665')">
             <div class="sleek glass panel centerobj button">
                 <p>Download</p>
             </div>
@@ -67,12 +84,29 @@
 <br>
 <div class="dense glass sub panel centerobj">
     <h2>
-        Findroid<br>(Video + Music)
+        SubStreamer
     </h2>
     <div class="info mobileV">
-        <img src="inject/suitedetails/img/jellyfin/findroid.png">
+        <img src="inject/suitedetails/img/airsonic/substreamer.webp">
         <p>
-            Native Android Client for Jellyfin written in Kotlin.
+            Mobile client for Subsonic media servers.
+        </p>
+        <a href="#" onclick="pExt('https://play.google.com/store/apps/details?id=com.ghenry22.substream2')">
+            <div class="sleek glass panel centerobj button">
+                <p>Download</p>
+            </div>
+        </a>
+    </div>
+</div>
+<br>
+<div class="dense glass sub panel centerobj">
+    <h2>
+        Ultrasonic
+    </h2>
+    <div class="info mobileV">
+        <img class="transparent" src="inject/suitedetails/img/airsonic/ultrasonic.png">
+        <p>
+            Modern revision of the official Subsonic Music Streamer app.
         </p>
         <a href="#" onclick="pExt('https://github.com/jarnedemeulemeester/findroid/blob/main/README.md')">
             <div class="sleek glass panel centerobj button">
@@ -82,23 +116,6 @@
     </div>
 </div>
 <br>
-<div class="dense glass sub panel centerobj">
-    <h2>
-        Finamp<br>(Music)
-    </h2>
-    <div class="info mobileV">
-        <img src="inject/suitedetails/img/jellyfin/finamp.png">
-        <p>
-            Third-party Jellyfin music client with the ability to download music for offline playback.
-        </p>
-        <a href="#" onclick="pExt('https://github.com/jmshrv/finamp/blob/main/README.md')">
-            <div class="sleek glass panel centerobj button">
-                <p>Download</p>
-            </div>
-        </a>
-    </div>
-</div>
-<br>-->
 <div class="dense glass panel centerobj centered">
     <p class="descriptionContentText descriptionContentTextFullWidth" id="serviceInformation">Other Platforms</p>
 </div>
@@ -108,11 +125,28 @@
         Full Subsonic Client List
     </h2>
     <div class="info mobileV">
-        <img src="inject/suitedetails/img/airsonic/subsonic.png">
+        <img class="transparent" src="inject/suitedetails/img/airsonic/subsonic.png">
         <p>
             In the case that the clients listed here do not meet your needs, a more comprehensive list is available at the official Subsonic website.
         </p>
         <a href="#" onclick="pExt('http://www.subsonic.org/pages/apps.jsp')">
+            <div class="sleek glass panel centerobj button">
+                <p>Visit</p>
+            </div>
+        </a>
+    </div>
+</div>
+<br>
+<div class="dense glass sub panel centerobj">
+    <h2>
+        Airsonic Client List
+    </h2>
+    <div class="info mobileV">
+        <img src="inject/suitedetails/img/airsonic/airsonic.png">
+        <p>
+            In the case that the clients listed here do not meet your needs, a more comprehensive list is available at the official Airsonic website.
+        </p>
+        <a href="#" onclick="pExt('https://airsonic.github.io/docs/apps/')">
             <div class="sleek glass panel centerobj button">
                 <p>Visit</p>
             </div>

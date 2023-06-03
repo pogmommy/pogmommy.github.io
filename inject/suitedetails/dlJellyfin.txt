@@ -1,5 +1,5 @@
 <div class="dense frosted panel centerobj centered">
-    <p class="descriptionContentText descriptionContentTextFullWidth" id="serviceInformation">Recommended Clients<br>If you are experiencing any issues with the default client linked above, please try one of the following clients.<br>If prompted for a server address during setup, use "https://watch.pogmom.me"</p>
+    <p class="descriptionContentText descriptionContentTextFullWidth" id="serviceInformation">If you are experiencing any issues with the default client linked above, please try one of the following clients.<br>If prompted for a server address during setup, use "https://watch.pogmom.me"</p>
 </div>
 <br>
 <div class="dense glass panel centerobj centered">
@@ -61,6 +61,23 @@
     </div>
 </div>
 <br>
+<div class="dense glass sub panel centerobj">
+    <h2>
+        Jellyfin Media Player
+    </h2>
+    <div class="info mobileV">
+        <img class="transparent" src="inject/suitedetails/img/jellyfin/jellyfin.png">
+        <p>
+            Default web frontend for Jellyfin, optimized for iOS.
+        </p>
+        <a href="#" onclick="pExt('https://apps.apple.com/us/app/jellyfin-mobile/id1480192618')">
+            <div class="sleek glass panel centerobj button">
+                <p>Download</p>
+            </div>
+        </a>
+    </div>
+</div>
+<br>
 <div class="dense glass panel centerobj centered">
     <p class="descriptionContentText descriptionContentTextFullWidth" id="serviceInformation">Android</p>
 </div>
@@ -75,6 +92,23 @@
             Native Android Client for Jellyfin written in Kotlin.
         </p>
         <a href="#" onclick="pExt('https://github.com/jarnedemeulemeester/findroid/blob/main/README.md')">
+            <div class="sleek glass panel centerobj button">
+                <p>Download</p>
+            </div>
+        </a>
+    </div>
+</div>
+<br>
+<div class="dense glass sub panel centerobj">
+    <h2>
+        Jellyfin Media Player
+    </h2>
+    <div class="info mobileV">
+        <img class="transparent" src="inject/suitedetails/img/jellyfin/jellyfin.png">
+        <p>
+            Default web frontend for Jellyfin, optimized for Android.
+        </p>
+        <a href="#" onclick="pExt('https://play.google.com/store/apps/details?id=org.jellyfin.mobile')">
             <div class="sleek glass panel centerobj button">
                 <p>Download</p>
             </div>

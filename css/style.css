@@ -274,6 +274,13 @@ ul > li {
     width: 25%;*/
 }
 
+.shrink {
+    display: inline-block;
+    transform: scale(0.8, 0.8);
+    transform-origin: top;
+  }
+  
+
 /*modal setup*/
 #modaloverlay {
   position: fixed; /* Sit on top of the page content */
