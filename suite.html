@@ -35,33 +35,58 @@
             <h1>Pogmom Suite</h1>
             <h2>A collection of public and private services I host.</h2>
         </div>
-        <div class="grid">
-            <div>
+        <div class="grid bun">
+            <div id="toppings">
                 <div class="frosted button">
-                    <a href="#" onclick="pExt('https://status.pogmom.me')">
+                    <a href="#" onclick="pExt('https://accounts.pogmom.me')">
                         <div class="content">
-                            <img class="tileimage" src="/images/suiteicons/status.pogmom.me.png">
-                            Status
-                        </div>
+                            <img class="tileimage" src="/images/suiteicons/accounts.pogmom.me.png">
+                            
+                        </div>Account
                     </a>
                 </div>
                 <div class="frosted button">
                     <a href="#" onclick="pExt('https://cloud.pogmom.me/apps/forms/s/WkDWQ9wEFacTgPQCddrXqqgz')">
                         <div class="content">
                             <img class="tileimage" src="/images/suiteicons/registration.png">
-                            Register
-                        </div>
+                            
+                        </div>Register
                     </a>
                 </div>
                 <div class="frosted button">
-                    <a href="#" onclick="pExt('https://accounts.pogmom.me')">
+                    <a href="#" onclick="pExt('https://cloud.pogmom.me/apps/forms/Lc4DjPwJM7e9KpCw')">
                         <div class="content">
-                            <img class="tileimage" src="/images/suiteicons/accounts.pogmom.me.png">
-                            Account
-                        </div>
+                            <img class="tileimage" src="/images/suiteicons/request.png">
+                            
+                        </div>Requests
+                    </a>
+                </div>
+                <div class="frosted button">
+                    <a href="#" onclick="pExt('https://cloud.pogmom.me/apps/forms/qqP37S6XWdHdR667')">
+                        <div class="content">
+                            <img class="tileimage" src="/images/suiteicons/feedback.png">
+                            
+                        </div>Feedback
+                    </a>
+                </div>
+                <div class="frosted button">
+                    <a href="#" onclick="pExt('https://status.pogmom.me')">
+                        <div class="content">
+                            <img class="tileimage" src="/images/suiteicons/status.pogmom.me.png">
+                            
+                        </div>Status
                     </a>
                 </div>
             </div>
+            <div class="burgerbasis">
+                <div class="frosted button burger">
+                    <a href="#" onclick="hamburger()">
+                        <div class="content">
+                            <img class="tileimage patty" src="/images/suiteicons/hamburger.png">
+                        </div>
+                    </a>
+                </div>
+                </div>
         </div>
     </div>
 
@@ -69,88 +94,109 @@
         <div class="grid">
             <div>
                 <div class="frosted button">
-                    <img class="detail top left" onclick="pSuiteInfo('books.pogmom.me','accounts.pogmom.me',false)"
-                        src="/images/suiteicons/accounts.pogmom.me.png">
-                    <img class="detail top right" onclick="pSuiteInfo('books.pogmom.me','books.pogmom.me',true)"
-                        src="/images/suiteicons/info.png">
-                    <img class="detail bottom right" onclick="pSuiteInfo('books.pogmom.me','dlCalibre',false)"
-                        src="/images/suiteicons/download.png">
                     <a href="#" onclick="pExt('https://books.pogmom.me')">
                         <div class="content">
                             <img class="tileimage" src="/images/suiteicons/books.pogmom.me.png">
-                            Books
-                        </div>
+                        </div>Books
                     </a>
+                    <div class="accessories">
+                        <img class="detail" onclick="pSuiteInfo('books.pogmom.me','accounts.pogmom.me',false)"
+                            src="/images/suiteicons/accounts.pogmom.me.png">
+                        <img class="detail" onclick="pSuiteInfo('books.pogmom.me','books.pogmom.me',true)"
+                            src="/images/suiteicons/info.png">
+                        <img class="detail" onclick="pSuiteInfo('books.pogmom.me','dlCalibre',false)"
+                            src="/images/suiteicons/download.png">
+                    </div>
                 </div>
                 <div class="frosted button">
-                    <img class="detail top left" onclick="pSuiteInfo('comics.pogmom.me','accounts.pogmom.me',false)"
-                        src="/images/suiteicons/accounts.pogmom.me.png">
-                    <img class="detail top right" onclick="pSuiteInfo('comics.pogmom.me','comics.pogmom.me',true)"
-                        src="/images/suiteicons/info.png">
-                    <img class="detail bottom right" onclick="pSuiteInfo('comics.pogmom.me','dlCalibre',false)"
-                        src="/images/suiteicons/download.png">
                     <a href="#" onclick="pExt('https://comics.pogmom.me')">
                         <div class="content">
                             <img class="tileimage" src="/images/suiteicons/comics.pogmom.me.png">
-                            Comics
-                        </div>
+                        </div>Comics
                     </a>
+                    <div class="accessories">
+                        <img class="detail" onclick="pSuiteInfo('comics.pogmom.me','accounts.pogmom.me',false)"
+                            src="/images/suiteicons/accounts.pogmom.me.png">
+                        <img class="detail" onclick="pSuiteInfo('comics.pogmom.me','comics.pogmom.me',true)"
+                            src="/images/suiteicons/info.png">
+                        <img class="detail" onclick="pSuiteInfo('comics.pogmom.me','dlCalibre',false)"
+                            src="/images/suiteicons/download.png">
+                    </div>
                 </div>
                 <div class="frosted button">
-                    <img class="detail top left" onclick="pSuiteInfo('watch.pogmom.me','accounts.pogmom.me',false)"
-                        src="/images/suiteicons/accounts.pogmom.me.png">
-                    <img class="detail top right" onclick="pSuiteInfo('watch.pogmom.me','watch.pogmom.me',true)"
-                        src="/images/suiteicons/info.png">
-                    <img class="detail bottom right" onclick="pSuiteInfo('watch.pogmom.me','dlJellyfin',false)"
-                        src="/images/suiteicons/download.png">
                     <a href="#" onclick="pExt('https://watch.pogmom.me')">
                         <div class="content">
                             <img class="tileimage" src="/images/suiteicons/watch.pogmom.me.png">
-                            Jellyfin
-                        </div>
+                        </div>Jellyfin
                     </a>
+                    <div class="accessories">
+                        <img class="detail" onclick="pSuiteInfo('watch.pogmom.me','accounts.pogmom.me',false)"
+                            src="/images/suiteicons/accounts.pogmom.me.png">
+                        <img class="detail" onclick="pSuiteInfo('watch.pogmom.me','watch.pogmom.me',true)"
+                            src="/images/suiteicons/info.png">
+                        <img class="detail" onclick="pSuiteInfo('watch.pogmom.me','dlJellyfin',false)"
+                            src="/images/suiteicons/download.png">
+                    </div>
+                </div>
+                <div class="frosted button">
+                    <a href="#" onclick="pExt('https://listen.pogmom.me')">
+                        <div class="content">
+                            <img class="tileimage" src="/images/suiteicons/listen.pogmom.me.png">
+                        </div>Airsonic
+                    </a>
+                    <div class="accessories">
+                        <img class="detail" onclick="pSuiteInfo('listen.pogmom.me','accounts.pogmom.me',false)"
+                            src="/images/suiteicons/accounts.pogmom.me.png">
+                        <img class="detail" onclick="pSuiteInfo('listen.pogmom.me','listen.pogmom.me',true)"
+                            src="/images/suiteicons/info.png">
+                        <img class="detail" onclick="pSuiteInfo('listen.pogmom.me','dlAirsonic',false)"
+                            src="/images/suiteicons/download.png">
+                    </div>
                 </div>
             </div>
             <div>
                 <div class="frosted button">
-                    <img class="detail top left" onclick="pSuiteInfo('listen.pogmom.me','accounts.pogmom.me',false)"
-                        src="/images/suiteicons/accounts.pogmom.me.png">
-                    <img class="detail top right" onclick="pSuiteInfo('listen.pogmom.me','listen.pogmom.me',true)"
-                        src="/images/suiteicons/info.png">
-                    <img class="detail bottom right" onclick="pSuiteInfo('listen.pogmom.me','dlAirsonic',false)"
-                        src="/images/suiteicons/download.png">
-                    <a href="#" onclick="pExt('https://listen.pogmom.me')">
-                        <div class="content">
-                            <img class="tileimage" src="/images/suiteicons/listen.pogmom.me.png">
-                            Airsonic
-                        </div>
-                    </a>
-                </div>
-                <div class="frosted button">
-                    <img class="detail top right" onclick="pSuiteInfo('mc.pogmom.me','mc.pogmom.me',false)"
-                        src="/images/suiteicons/info.png">
-                    <img class="detail bottom right" onclick="pExt('https://prismlauncher.org/')"
-                        src="/images/suiteicons/download.png">
                     <a href="#" onclick="pExt('https://mc.pogmom.me')">
                         <div class="content">
                             <img class="tileimage" src="/images/suiteicons/mc.pogmom.me.png">
-                            Minecraft
-                        </div>
+                        </div>Minecraft
                     </a>
+                    <div class="accessories">
+                        <img class="detail" onclick="pSuiteInfo('mc.pogmom.me','mc.pogmom.me',false)"
+                            src="/images/suiteicons/info.png">
+                        <img class="detail" onclick="pExt('https://prismlauncher.org/')"
+                            src="/images/suiteicons/download.png">
+                    </div>
                 </div>
                 <div class="frosted button">
-                    <img class="detail top left" onclick="pSuiteInfo('cloud.pogmom.me','accounts.pogmom.me',false)"
-                        src="/images/suiteicons/accounts.pogmom.me.png">
-                    <img class="detail top right" onclick="pSuiteInfo('cloud.pogmom.me','cloud.pogmom.me',false)"
-                        src="/images/suiteicons/info.png">
-                    <img class="detail bottom right" onclick="pExt('https://nextcloud.com/install/')"
-                        src="/images/suiteicons/download.png">
+                    <a href="#" onclick="pExt('https://pogmommy.gay')">
+                        <div class="content">
+                            <img class="tileimage" src="/images/suiteicons/pogmommy.gay.png">
+                        </div>Mastodon
+                    </a>
+                    <div class="accessories">
+                        <img class="detail" onclick="pSuiteInfo('cloud.pogmom.me','accounts.pogmom.me',false)"
+                            src="/images/suiteicons/accounts.pogmom.me.png">
+                        <img class="detail" onclick="pSuiteInfo('cloud.pogmom.me','cloud.pogmom.me',false)"
+                            src="/images/suiteicons/info.png">
+                        <img class="detail" onclick="pExt('https://nextcloud.com/install/')"
+                            src="/images/suiteicons/download.png">
+                    </div>
+                </div>
+                <div class="frosted button">
                     <a href="#" onclick="pExt('https://cloud.pogmom.me')">
                         <div class="content">
                             <img class="tileimage" src="/images/suiteicons/cloud.pogmom.me.png">
-                            NextCloud
-                        </div>
+                        </div>NextCloud
                     </a>
+                    <div class="accessories">
+                        <img class="detail" onclick="pSuiteInfo('cloud.pogmom.me','accounts.pogmom.me',false)"
+                            src="/images/suiteicons/accounts.pogmom.me.png">
+                        <img class="detail" onclick="pSuiteInfo('cloud.pogmom.me','cloud.pogmom.me',false)"
+                            src="/images/suiteicons/info.png">
+                        <img class="detail" onclick="pExt('https://nextcloud.com/install/')"
+                            src="/images/suiteicons/download.png">
+                    </div>
                 </div>
             </div>
         </div>

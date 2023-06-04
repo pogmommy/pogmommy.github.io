@@ -3,6 +3,7 @@ $(function () {
 	$("#footer-placeholder").load("/inject/footer.html");
 	//$("#footer-placeholder").fadeIn("fast");
 	$("#overlay").fadeOut(2000);
+	$("#toppings").hide();
 });
 
 var testing = false
@@ -24,6 +25,15 @@ function pRdr(a){
 	console.log(newurl);
 	//parent.location.src = newurl;
 	window.top.location.href = newurl;
+}
+
+function hamburger(){
+	var toppings = $("#toppings");
+	if (window.innerWidth < 960) {
+		$("#toppings").animate({height:'toggle'},300);
+	} else {
+		$("#toppings").animate({width:'toggle'},300);
+	}
 }
 
 function pExt(a){

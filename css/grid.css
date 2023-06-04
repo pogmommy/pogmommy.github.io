@@ -1,21 +1,57 @@
 /*HEADER*/
 
-.header .grid .content {
-    margin: 10px;
-    min-width: 50px;
-    max-width: 80px;
-}
+
+
+/*@media screen and (max-aspect-ratio: 13/9) {*/
+    @media (max-width:960px)  {
+        .header .grid .content {
+            margin: 10px;
+            min-width: 20px;
+            max-width: 60px;
+        }
+        .header .grid .toppings .content {
+            margin-bottom: 0px;
+        }
+        .header > .grid > #toppings > .button {
+            margin-left: 5px;
+            margin-right: 5px;
+            padding-bottom: 10px;
+        }
+    }
+    /*@media screen and (min-aspect-ratio: 13/9) {*/
+    @media (min-width:961px)  {
+        .header .grid .content {
+            margin: 10px;
+            min-width: 50px;
+            max-width: 80px;
+        }
+    }
 
 /*BODY*/
 
-.body .grid .content {
-    margin: 15px;
-    min-width: 50px;
-    max-width: 120px;
-}
-.body .grid .content img {
-    margin: 10px 0px;
-}
+/*@media screen and (max-aspect-ratio: 13/9) {*/
+    @media (max-width:960px)  {
+        .body .grid .content {
+            margin: 5px;
+            min-width: 40px;
+            max-width: 120px;
+        }
+        .body .grid .content img {
+            margin: 5px;
+        }
+    }
+    /*@media screen and (min-aspect-ratio: 13/9) {*/
+    @media (min-width:961px)  {
+        .body .grid .content {
+            margin: 15px;
+            min-width: 50px;
+            max-width: 120px;
+        }
+        .body .grid .content img {
+            margin: 10px 0px;
+        }
+    }
+    
 
 /*FOOTER*/
 
@@ -34,6 +70,8 @@
 .grid {
     width: 100%;
     flex-wrap: wrap;
+    justify-content: space-around;
+
 }
 .grid > * {
     justify-content: space-around;
@@ -56,23 +94,31 @@
 	opacity: 1;
 }
 .grid .content img {
-    margin-bottom: 10px;
     width: 75%;
 }
 .grid .detail {
-    width: 17.5%;
-    position:absolute;
     z-index: 1;
 }
-.top {
-    top:7px;
-}
-.bottom {
-    bottom:7px;
-}
-.left {
-    left:7px;
-}
-.right {
-    right:7px;
+
+/*@media screen and (max-aspect-ratio: 13/9) {*/
+    @media (max-width:960px)  {
+        .grid .detail {
+            min-width: 15px;
+            max-width: 20px;
+            flex-basis: 0;
+        }
+    }
+    /*@media screen and (min-aspect-ratio: 13/9) {*/
+    @media (min-width:961px)  {
+        .grid .detail {
+            min-width: 10px;
+            max-width: 30px;
+        }
+    }
+
+.accessories {
+    margin: 1vmax 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
 }
