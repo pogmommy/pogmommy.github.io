@@ -1,6 +1,8 @@
 /*HEADER*/
 
-
+.header > .grid > #toppings > .button {
+    padding-bottom: 10px;
+}
 
 /*@media screen and (max-aspect-ratio: 13/9) {*/
     @media (max-width:960px)  {
@@ -15,7 +17,10 @@
         .header > .grid > #toppings > .button {
             margin-left: 5px;
             margin-right: 5px;
-            padding-bottom: 10px;
+        }
+        #toppings {
+            justify-content: space-around;
+            width: 100%;
         }
     }
     /*@media screen and (min-aspect-ratio: 13/9) {*/

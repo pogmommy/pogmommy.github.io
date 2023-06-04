@@ -52,6 +52,17 @@ body {
     flex-wrap: wrap;
     border-bottom: 2px solid rgba(255, 255, 255, 0.25);
 }
+@media (max-width: 960px) {
+    .header {
+        flex-direction: column;
+    }
+}
+@media (min-width:961px) {
+    .header {
+        flex-direction: row;
+    }
+}
+
 .header > * {
     margin-top: auto;
     margin-bottom: auto;
