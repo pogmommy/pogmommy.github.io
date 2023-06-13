@@ -1,0 +1,3 @@
+<div class="dense glass panel centerobj">
+    <p class="descriptionContentText descriptionContentTextFullWidth" id="serviceInformation">A microblogging social media server joined with the broader fediverse, akin to Twitter and Tumblr.</p>
+</div>

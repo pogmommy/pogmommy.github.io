@@ -1,0 +1,118 @@
+<div class="dense frosted panel centerobj centered">
+    <p class="descriptionContentText descriptionContentTextFullWidth" id="serviceInformation">Recommended Clients<br>If you are experiencing any issues with the default client linked above, please try one of the following clients.<br>If prompted for a server address during setup, use "https://masto.pogmom.me"</p>
+</div>
+<br>
+<div class="dense glass panel centerobj centered">
+    <p class="descriptionContentText descriptionContentTextFullWidth" id="serviceInformation">Desktop</p>
+</div>
+<br>
+<div class="dense glass sub panel centerobj">
+    <h2>
+        Whalebird<br>(Video + Music)
+    </h2>
+    <div class="info mobileV">
+        <img class="transparent" src="inject/suitedetails/img/masto/whalebird.png">
+        <p>
+            A feature-rich fediverse desktop client.
+        </p>
+        <a href="#" onclick="pExt('https://whalebird.social/')">
+            <div class="sleek glass panel centerobj button">
+                <p>Download</p>
+            </div>
+        </a>
+    </div>
+</div>
+<br>
+<div class="dense glass panel centerobj centered">
+    <p class="descriptionContentText descriptionContentTextFullWidth" id="serviceInformation">iOS</p>
+</div>
+<br>
+<div class="dense glass sub panel centerobj">
+    <h2>
+        Mammoth<br>
+    </h2>
+    <div class="info mobileV">
+        <img class="transparent" src="inject/suitedetails/img/masto/mammoth.png">
+        <p>
+            Incredibly clean iOS Client for Mastodon.
+        </p>
+        <a href="#" onclick="pExt('https://apps.apple.com/us/app/mammoth-for-mastodon/id1667573899')">
+            <div class="sleek glass panel centerobj button">
+                <p>Download</p>
+            </div>
+        </a>
+    </div>
+</div>
+<br>
+<div class="dense glass sub panel centerobj">
+    <h2>
+        IceCubesApp<br>
+    </h2>
+    <div class="info mobileV">
+        <img src="inject/suitedetails/img/masto/icecubesapp.png">
+        <p>
+            Native iOS Client for Mastodon written in SwiftUI.
+        </p>
+        <a href="#" onclick="pExt('https://apps.apple.com/us/app/ice-cubes-for-mastodon/id6444915884')">
+            <div class="sleek glass panel centerobj button">
+                <p>Download</p>
+            </div>
+        </a>
+    </div>
+</div>
+<br>
+<div class="dense glass sub panel centerobj">
+    <h2>
+        Mastodon<br>
+    </h2>
+    <div class="info mobileV">
+        <img src="inject/suitedetails/img/masto/mastodon.webp">
+        <p>
+            Default iOS client for Mastodon.
+        </p>
+        <a href="#" onclick="pExt('https://apps.apple.com/us/app/mastodon-for-iphone-and-ipad/id1571998974')">
+            <div class="sleek glass panel centerobj button">
+                <p>Download</p>
+            </div>
+        </a>
+    </div>
+</div>
+<br>
+<div class="dense glass panel centerobj centered">
+    <p class="descriptionContentText descriptionContentTextFullWidth" id="serviceInformation">Android</p>
+</div>
+<br>
+<div class="dense glass sub panel centerobj">
+    <h2>
+        Tusky<br>
+    </h2>
+    <div class="info mobileV">
+        <img class="transparent" src="inject/suitedetails/img/masto/tusky.png">
+        <p>
+            Native Android client for Mastodon written in Kotlin.
+        </p>
+        <a href="#" onclick="pExt('https://play.google.com/store/apps/details?id=com.keylesspalace.tusky')">
+            <div class="sleek glass panel centerobj button">
+                <p>Download</p>
+            </div>
+        </a>
+    </div>
+</div>
+<br>
+<div class="dense glass sub panel centerobj">
+    <h2>
+        Mastodon<br>
+    </h2>
+    <div class="info mobileV">
+        <img src="inject/suitedetails/img/masto/mastodon.webp">
+        <p>
+            Default Android Client for Mastodon.
+        </p>
+        <a href="#" onclick="pExt('https://play.google.com/store/apps/details?id=org.joinmastodon.android')">
+            <div class="sleek glass panel centerobj button">
+                <p>Download</p>
+            </div>
+        </a>
+    </div>
+</div>
+<br>
