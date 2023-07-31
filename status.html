@@ -26,7 +26,7 @@
         }
 
         ifServerOnline(function () {
-            document.getElementById("mframe").src = "https://status.pogmom.me";
+            window.location.href = "https://status.pogmom.me";
         },
             function () {
                 alert("Main Status Page is currently down!\nThe usual status page is more accurate and powerful, but is also personally hosted. This means that in the event of a network outage, it becomes unavialable, and thus less helpful.\nIf you're seeing this message, it means that the main status page is down, which likely means most other services are as well.\nYou'll now be shown the backup status page which is less powerful and runs less frequently. However, it is hosted externally, allowing it to provide updates in the event of a network outage.");
