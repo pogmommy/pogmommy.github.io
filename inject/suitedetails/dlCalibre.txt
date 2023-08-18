@@ -26,22 +26,6 @@
 <div class="dense glass panel centerobj centered">
     <p class="descriptionContentText descriptionContentTextFullWidth" id="serviceInformation">Android</p>
 </div>
-<br>
-<div class="dense glass sub panel centerobj">
-    <h2>
-        OPDS Viewer
-    </h2>
-    <div class="info mobileV">
-        <img class="transparent" src="inject/suitedetails/img/calibre/opdsviewer.webp">
-        <p>
-            OPDS-compatible ebook reader for Android.
-        </p>
-        <a href="#" onclick="pExt('https://play.google.com/store/apps/details?id=info.ebstudio.opdsviewer')">
-            <div class="sleek glass panel centerobj button">
-                <p>Download</p>
-            </div>
-        </a>
-    </div>
 </div>
 <br>
 <div class="dense glass sub panel centerobj">
@@ -60,3 +44,19 @@
         </a>
     </div>
 </div>
+<br>
+<div class="dense glass sub panel centerobj">
+    <h2>
+        OPDS Viewer
+    </h2>
+    <div class="info mobileV">
+        <img class="transparent" src="inject/suitedetails/img/calibre/opdsviewer.webp">
+        <p>
+            OPDS-compatible ebook reader for Android.
+        </p>
+        <a href="#" onclick="pExt('https://play.google.com/store/apps/details?id=info.ebstudio.opdsviewer')">
+            <div class="sleek glass panel centerobj button">
+                <p>Download</p>
+            </div>
+        </a>
+    </div>
