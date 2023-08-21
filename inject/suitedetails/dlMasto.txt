@@ -8,7 +8,7 @@
 <br>
 <div class="dense glass sub panel centerobj">
     <h2>
-        Whalebird<br>(Video + Music)
+        Whalebird<br>
     </h2>
     <div class="info mobileV">
         <img class="transparent" src="inject/suitedetails/img/masto/whalebird.png">

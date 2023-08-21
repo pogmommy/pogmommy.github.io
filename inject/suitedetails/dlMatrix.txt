@@ -1,0 +1,101 @@
+<div class="dense frosted panel centerobj centered">
+    <p class="descriptionContentText descriptionContentTextFullWidth" id="serviceInformation">Recommended Clients<br>If you are experiencing any issues with the default client linked above, please try one of the following clients.<br>If prompted for a server address during setup, use "https://matrix.pogmom.me"</p>
+</div>
+<br>
+<div class="dense glass panel centerobj centered">
+    <p class="descriptionContentText descriptionContentTextFullWidth" id="serviceInformation">Desktop</p>
+</div>
+<br>
+<div class="dense glass sub panel centerobj">
+    <h2>
+        Element<br>
+    </h2>
+    <div class="info mobileV">
+        <img class="transparent" src="inject/suitedetails/img/matrix/element.svg">
+        <p>
+            A high-quality cross-platform Matrix client.
+        </p>
+        <a href="#" onclick="pExt('https://matrix.org/ecosystem/clients/element/')">
+            <div class="sleek glass panel centerobj button">
+                <p>Download</p>
+            </div>
+        </a>
+    </div>
+</div>
+<br>
+<div class="dense glass sub panel centerobj">
+    <h2>
+        Cinny<br>
+    </h2>
+    <div class="info mobileV">
+        <img class="transparent" src="inject/suitedetails/img/matrix/cinny.svg">
+        <p>
+            A desktop-oriented Matrix client.
+        </p>
+        <a href="#" onclick="pExt('https://matrix.org/ecosystem/clients/cinny/')">
+            <div class="sleek glass panel centerobj button">
+                <p>Download</p>
+            </div>
+        </a>
+    </div>
+</div>
+<br>
+<div class="dense glass sub panel centerobj">
+    <h2>
+        Thunderbird<br>
+    </h2>
+    <div class="info mobileV">
+        <img class="transparent" src="inject/suitedetails/img/matrix/thunderbird.png">
+        <p>
+            A great email & calendar program with Matrix server integration.
+        </p>
+        <a href="#" onclick="pExt('https://www.thunderbird.net/en-US/')">
+            <div class="sleek glass panel centerobj button">
+                <p>Download</p>
+            </div>
+        </a>
+    </div>
+</div>
+<br>
+<div class="dense glass panel centerobj centered">
+    <p class="descriptionContentText descriptionContentTextFullWidth" id="serviceInformation">iOS</p>
+</div>
+<br>
+<div class="dense glass sub panel centerobj">
+    <h2>
+        Element<br>
+    </h2>
+    <div class="info mobileV">
+        <img class="transparent" src="inject/suitedetails/img/matrix/element.svg">
+        <p>
+            A high-quality cross-platform Matrix client.
+        </p>
+        <a href="#" onclick="pExt('https://apps.apple.com/app/vector/id1083446067')">
+            <div class="sleek glass panel centerobj button">
+                <p>Download</p>
+            </div>
+        </a>
+    </div>
+</div>
+<br>
+<div class="dense glass panel centerobj centered">
+    <p class="descriptionContentText descriptionContentTextFullWidth" id="serviceInformation">Android</p>
+</div>
+<br>
+<div class="dense glass sub panel centerobj">
+    <h2>
+        Element<br>
+    </h2>
+    <div class="info mobileV">
+        <img class="transparent" src="inject/suitedetails/img/matrix/element.svg">
+        <p>
+            A high-quality cross-platform Matrix client.
+        </p>
+        <a href="#" onclick="pExt('https://play.google.com/store/apps/details?id=im.vector.app')">
+            <div class="sleek glass panel centerobj button">
+                <p>Download</p>
+            </div>
+        </a>
+    </div>
+</div>
+<br>
