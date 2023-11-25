@@ -1,5 +1,5 @@
 <div class="dense frosted panel centerobj centered">
-    <p class="descriptionContentText descriptionContentTextFullWidth" id="serviceInformation">If you are experiencing any issues with the default client linked above, please try one of the following clients.<br>If prompted for a server address during setup, use "https://(books/comics).pogmom.me/opds".</p>
+    <p class="descriptionContentText descriptionContentTextFullWidth" id="serviceInformation">If you are experiencing any issues with the default client linked above, please try one of the following clients.<br>If prompted for a server address during setup, use "https://books.pogmom.me/opds".</p>
 </div>
 <br>
 <div class="dense glass panel centerobj centered">

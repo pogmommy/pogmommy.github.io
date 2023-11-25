@@ -1,3 +1,3 @@
 <div class="dense glass panel centerobj">
-    <p class="descriptionContentText descriptionContentTextFullWidth" id="serviceInformation">A NextCloud server used for productivity and social services, akin to the GSuite and Office 365 Online.</p>
+    <p class="descriptionContentText descriptionContentTextFullWidth" id="serviceInformation">NextCloud is a productivity and cloud storage platform.</p>
 </div>

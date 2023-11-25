@@ -1,3 +1,3 @@
 <div class="dense glass panel centerobj">
-    <p class="descriptionContentText descriptionContentTextFullWidth" id="serviceInformation">A music server hosted using the Subsonic API, akin to Spotify, Apple Music, etc.</p>
+    <p class="descriptionContentText descriptionContentTextFullWidth" id="serviceInformation">Airsonic is fully-featured music server powered by the Subsonic API.</p>
 </div>
