@@ -42,7 +42,7 @@ function pExt(a){
 
 function pCd(a){
 	console.log(arguments[0]);
-	window.location = arguments[0];
+	window.top.location.href = arguments[0];
 }
 
 function pDL(a){
