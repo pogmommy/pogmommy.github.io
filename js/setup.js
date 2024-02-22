@@ -19,7 +19,6 @@ if (testing == true){
 console.log(domain)
 
 function pRdr(a){
-	console.log("PenRedirect!");
 	console.log(arguments[0]);
 	var newurl = domain + arguments[0];
 	console.log(newurl);
@@ -37,13 +36,16 @@ function hamburger(){
 }
 
 function pExt(a){
-	console.log("PenExternal!");
 	console.log(arguments[0]);
 	window.open(arguments[0]);
 }
 
+function pCd(a){
+	console.log(arguments[0]);
+	window.location = arguments[0];
+}
+
 function pDL(a){
-	console.log("PenDownload!");
 	console.log(arguments[0]);
 	window.top.location.href = arguments[0];
 }
