@@ -1,3 +1,0 @@
-<div class="dense glass panel centerobj">
-    <p class="descriptionContentText descriptionContentTextFullWidth" id="serviceInformation">Mastodon is a federated microblogging social media platform powered by ActivityPub.</p>
-</div>

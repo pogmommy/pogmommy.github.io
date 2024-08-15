@@ -1,3 +1,0 @@
-<div class="dense glass panel centerobj">
-    <p class="descriptionContentText descriptionContentTextFullWidth" id="serviceInformation">Airsonic is fully-featured music server powered by the Subsonic API.</p>
-</div>

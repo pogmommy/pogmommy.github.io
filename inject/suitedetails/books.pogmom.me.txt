@@ -1,3 +1,0 @@
-<div class="dense glass panel centerobj">
-    <p class="descriptionContentText descriptionContentTextFullWidth" id="serviceInformation">Calibre-Web is an online reader for Text Books, Novels, Comic Books, and Manga.</p>
-</div>

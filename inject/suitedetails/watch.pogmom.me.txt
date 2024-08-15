@@ -1,3 +1,0 @@
-<div class="dense glass panel centerobj">
-    <p class="descriptionContentText descriptionContentTextFullWidth" id="serviceInformation">Jellyfin is a Movie, Television, and Music streaming service.</p>
-</div>

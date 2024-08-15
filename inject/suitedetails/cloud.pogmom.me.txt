@@ -1,3 +1,0 @@
-<div class="dense glass panel centerobj">
-    <p class="descriptionContentText descriptionContentTextFullWidth" id="serviceInformation">NextCloud is a productivity and cloud storage platform.</p>
-</div>

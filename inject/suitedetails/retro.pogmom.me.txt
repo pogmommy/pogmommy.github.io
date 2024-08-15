@@ -1,3 +1,0 @@
-<div class="dense glass panel centerobj">
-    <p class="descriptionContentText descriptionContentTextFullWidth" id="serviceInformation">EmulatorJS is a retro game catalog playable in your browser.</p>
-</div>
